@@ -1,8 +1,11 @@
 body {
+    display: grid;
     margin: -48px 0px 0px 0px;
     border: 0px;
     padding: 0px;
     background-image: linear-gradient(to right, rgb(240, 248, 247), black);
+    grid-template-columns: auto;
+    grid-template-rows: 180px auto 10px;
 }
 
 header {
@@ -187,7 +190,6 @@ ul li:hover {
 }
 
 .blog__texto--color {
-    height: 100%;
     width: 70%;
     border: solid black;
     background-color: rgba(245, 245, 220, 0.322);
@@ -201,7 +203,6 @@ ul li:hover {
 
 @media only screen and (max-width:440px) {
     .blog__texto--color {
-        height: 100%;
         width: 70%;
         border: solid black;
         background-color: rgba(60, 20, 202, 0.322);
@@ -244,22 +245,16 @@ ul li:hover {
 
 .foot {
     background-color: black;
-    position: bootom 0;
     width: 100%;
-    position: fixed;
     bottom: 0;
-
-}
-
-
-div.foot {
     color: rgb(48, 36, 19);
     text-transform: uppercase;
+    grid-row: 3/4;
 }
-
 
 #tabla-precios {
     display: flex;
+    grid-row: 2/3;
     align-items: baseline;
     width: 100%;
     margin-top: 20px;
