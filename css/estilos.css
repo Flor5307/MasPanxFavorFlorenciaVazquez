@@ -43,62 +43,46 @@ h2 {
 
 div.img {
     border: 4px solid black;
-
+    background-size: cover;
+    background-position: center;
 }
 
 div.item1 {
     background-image: url(/img/mano\ raviolon.jpg);
-    background-size: cover;
-    background-position: center;
     background-color: #dd9933;
 }
 
 div.item2 {
     background-color: red;
     background-image: url(/img/perspectiva.raviolon.jpg);
-    background-size: cover;
-    background-position: center;
 }
-
 div.item3 {
     background-image: url(/img/huevos.vertical.jpg);
-    background-size: cover;
-    background-position: center;
     background-color: aliceblue;
 }
 
 div.item4 {
     background-image: url(/img/fideos.jpg);
-    background-size: cover;
-    background-position: center;
     background-color: violet;
 }
 
 div.item5 {
     background-color: orangered;
     background-image: url(/img/medias.jpg);
-    background-size: cover;
-    background-position: center;
 }
 
 div.item6 {
     background-image: url(/img/pan\ trenza.jpg);
-    background-size: cover;
-    background-position: center;
     background-color: yellow;
 }
 
 div.item7 {
     background-image: url(/img/cappeletti.jpg);
-    background-size: cover;
-    background-position: center;
     background-color: green;
 }
 
 div.item8 {
     background-image: url(/img/raviolplancha..jpg);
-    background-size: cover;
-    background-position: center;
     background-color: brown;
 }
 
