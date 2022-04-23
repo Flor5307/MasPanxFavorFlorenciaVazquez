@@ -1,65 +1,105 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sitio FLor</title>
-        <link rel="stylesheet" href="css/estilos.css">
-    </head>
 
-    <body>
-        <header>
-            <div>
-                <h1>Mas panX favor</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio FLor</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Mas panX favor</h1>
+        </div>
+        <div>
+            <ul id="menu">
+                <li><a href="index.html">Blog personal</a></li>
+                <li><a href="imagen.html">Mis trabajos</a></li>
+                <li><a href="precios.html">Compras online</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="formulario">
+        <h2>Dejanos tus datos y te contactamos</h2>
+        <form action="enviar.php"></form method="post" enctype="text/plain">
+        <div class="datos">
+            <div class="subdatos">
+                <label for="">Nombre</label>
+                <input type="text" placeholder="escribe tu nombre" required>
             </div>
-            <div>
-                <ul id="menu">
-                    <li><a href="index.html">Blog personal</a></li>
-                    <li><a href="imagen.html">Mis trabajos</a></li>
-                    <li><a href="precios.html">Compras online</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
+            <div class="subdatos">
+                <label for="">Apellido</label>
+                <input type="text" placeholder="escribe tu apellido" required>
             </div>
-        </header>
-        <div class="formulario">
-            <h2>Dejanos tus datos y te contactamos</h2>
-            <form action="enviar.php"></form method="post" enctype="text/plain">
-            <label for="">Nombre</label>
-            <input type="text" placeholder="escribe tu nombre" required>
-            <label for="">Apellido</label>
-            <input type="text" placeholder="escribe tu apellido">
-            <label for="">Telefono</label>
-            <input type="number" placeholder="escribe tu tel">
-            <label for="">Correo</label>
-            <input type="mail" placeholder="escribe tu mail">
-            <label for="">Comentarios</label>
-            <textarea name="comentarios" id="" cols="30" rows="5" placeholder="escribe tu mensaje"></textarea><br>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Borrar">
-            <p>¿Que tipo de comensal sos?</p>
+            <div class="subdatos">
+                <label for="">Mail</label>
+                <input type="text" placeholder="escribe tu Mail" required>
+            </div>
+            <div class="subdatos">
+                <label for="">Tel</label>
+                <input type="text" placeholder="escribe tu Tel" required>
+            </div>
+            <div class="subdatos">
+                <label for="">Comentarios</label>
+                <textarea name="comentarios" id="" cols="30" rows="5" placeholder="escribe tu mensaje"></textarea>
+            </div>
+    </div>
+    <div class="gustos">
+        <p>¿Que tipo de comensal sos?</p>
+        <div class="sub_gustos">
+            <img class="icon"src="/img/icons/pasta1.png" alt="">
             <input type="radio">
             <label for="">Vegano</label>
+        </div>
+        <div class="sub_gustos">
+            <img class="icon" src="/img/icons/pasta2.png" alt="">
             <input type="radio">
             <label for="">Vegetariano</label>
-            <input type="radio">
-            <label for="">Como de todo</label>
-            <input type="radio">
-            <label for="">Sin tacc</label>
-            <p>¿Que queres comprar?</p>
-            <input class="checkbox" type="checkbox" value="pasta">pasta
-            <input class="checkbox" type="checkbox" value="pan">pan
-            <input class="checkbox" type="checkbox" value="salsa">salsa
-            <input type="radio">
-            <label for="">Acepto los terminos</label>
         </div>
-        <footer>
-            <div class="foot">
-                <i class="fa-brands fa-instagram"></i>
-                <a href="https://www.instagram.com/maspanxfavor/">Instagram</a>
-                <a href="https://www.facebook.com/me/">facebook</a>
-                2016 &copy; Florpastas
-            </div>
-        </footer>
-    </body>
+        <div class="sub_gustos">
+            <img class="icon" src="/img/icons/pasta3.png" alt="">
+            <input type="radio">
+            <label for="">como de todo</label>
+        </div>
+        <div  class="sub_gustos">
+            <img class="icon" src="/img/icons/gluten1.png" alt="">
+            <input type="radio">
+            <label for="">sin tacc</label>
+        </div>
+    </div>
+    <div class="compras">
+        <p>¿Que queres comprar?</p>
+        <div class="sub-compras">
+            <img class="icon" src="/img/icons/pan1.png" alt="">
+            <label><input type="checkbox" />Pan</label>
+        </div>
+        <div class="sub-compras">
+            <img class="icon" src="/img/icons/spaguetti3.png" alt="">
+            <label><input type="checkbox" />Pastas</label>
+        </div>
+        <div class="sub-compras">
+            <img class="icon" src="/img/icons/salsa.png" alt="">
+            <label><input type="checkbox" />Salsas</label>
+        </div>
+        <div>
+            <input type="radio" id="aceptar" name="aceptar2" value="aceptar3" checked>
+            <label for="aceptar">Acepto los terminos</label>
+        </div>
+        <input type="submit" value="Enviar">
+    </div>
+    </div>
+    <footer>
+        <div class="foot">
+            <i class="fa-brands fa-instagram"></i>
+            <a href="https://www.instagram.com/maspanxfavor/">Instagram</a>
+            <a href="https://www.facebook.com/me/">facebook</a>
+            2016 &copy; Florpastas
+        </div>
+    </footer>
+</body>
+
 </html>
