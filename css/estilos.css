@@ -4,7 +4,7 @@ body {
     border: 0px;
     padding: 0px;
     background-image: linear-gradient(to right, rgb(240, 248, 247), black);
-    grid-template-rows: 200px auto 10px;
+    grid-template-rows: 200px auto 50px;
     grid-template-columns: auto;
 }
 
@@ -262,33 +262,44 @@ div.gustos {
 }
 
 div.sub_gustos {
-    display:flex;
+    display: flex;
     align-items: center;
 }
 
 div.sub_gustos :last-child {
     background-color: pink;
 }
-.icon{
+
+.icon {
     width: 64px;
     height: 64px;
     margin: 8px;
 }
+
 div.compras {
     background-color: rebeccapurple;
 }
-div.sub-compras{
-    display:flex;
+
+div.sub-compras {
+    display: flex;
     align-items: center;
 }
 
-.foot {
-    background-color: black;
+#footer {
+    background-color: rgb(240, 9, 201);
+}
+.foot_contactos {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
     width: 100%;
-    bottom: 0;
-    color: rgb(48, 36, 19);
+    color: black;
     text-transform: uppercase;
     grid-row: 3/4;
+}
+
+.foot_contactos>* {
+    flex: 1;
 }
 
 #tabla-precios {
