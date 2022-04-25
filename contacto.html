@@ -12,10 +12,12 @@
 <body>
     <header>
         <div>
+            <h2 class="first">Chef</h2>
             <h1>Mas panX favor</h1>
         </div>
         <div>
             <ul id="menu">
+                <li><a href="home.html">Home</a></li>
                 <li><a href="index.html">Blog personal</a></li>
                 <li><a href="imagen.html">Mis trabajos</a></li>
                 <li><a href="precios.html">Compras online</a></li>
@@ -23,80 +25,127 @@
             </ul>
         </div>
     </header>
-    <div class="formulario">
-        <h2>Dejanos tus datos y te contactamos</h2>
-        <form action="enviar.php"></form method="post" enctype="text/plain">
-        <div class="datos">
-            <div class="subdatos">
-                <label for="">Nombre</label>
-                <input type="text" placeholder="escribe tu nombre" required>
+    <div class="all">
+        <div class="formulario">
+            <h2>Pongase en contacto con el Chef</h2>
+            <div class="container">
+                <form>
+                    <ul class="flex-outer">
+                        <li>
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" placeholder="Escribe tu nombre aca">
+                        </li>
+                        <li>
+                            <label for="apellido">Apellido</label>
+                            <input type="text" id="apellido" placeholder="Escribe tu apellido aca">
+                        </li>
+                        <li>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Escribe tu email aca">
+                        </li>
+                        <li>
+                            <label for="tel">Telefono</label>
+                            <input type="tel" id="tel" placeholder="Escribe tu telefono aca">
+                        </li>
+                        <li>
+                            <label for="comentarios">Asunto</label>
+                            <textarea rows="6" id="comentarios" placeholder="Escribe tu Asunto"></textarea>
+                        </li>
+                        <li>
+                            <p>Edad</p>
+                            <ul class="flex-inner">
+                                <li>
+                                    <input type="checkbox" id="veinte-veintinueve">
+                                    <label for="veinte-veintinueve">20-29</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="treinta-treintinueve">
+                                    <label for="treinta-treintinueve">30-39</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="cuarenta-cuarentinueve">
+                                    <label for="cuarenta-cuarentinueve">40-49</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="cincuenta-cincuentinueve">
+                                    <label for="cincuenta-cincuentinueve">50-59</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="sesenta-sesentinueve">
+                                    <label for="sesenta-sesentinueve">60-69</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="otra">
+                                    <label for="otra">Prefiero no decirla</label>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </form>
             </div>
-            <div class="subdatos">
-                <label for="">Apellido</label>
-                <input type="text" placeholder="escribe tu apellido" required>
+        </div>
+        <div class="gustos">
+            <p>¿Que tipo de comensal sos?</p>
+            <div class="sub_gustos">
+                <img class="icon" src="/img/icons/pasta1.png" alt="">
+                <input type="radio">
+                <label for="">Vegano</label>
             </div>
-            <div class="subdatos">
-                <label for="">Mail</label>
-                <input type="text" placeholder="escribe tu Mail" required>
+            <div class="sub_gustos">
+                <img class="icon" src="/img/icons/pasta2.png" alt="">
+                <input type="radio">
+                <label for="">Vegetariano</label>
             </div>
-            <div class="subdatos">
-                <label for="">Tel</label>
-                <input type="text" placeholder="escribe tu Tel" required>
+            <div class="sub_gustos">
+                <img class="icon" src="/img/icons/pasta3.png" alt="">
+                <input type="radio">
+                <label for="">como de todo</label>
             </div>
-            <div class="subdatos">
-                <label for="">Comentarios</label>
-                <textarea name="comentarios" id="" cols="30" rows="5" placeholder="escribe tu mensaje"></textarea>
+            <div class="sub_gustos">
+                <img class="icon" src="/img/icons/gluten1.png" alt="">
+                <input type="radio">
+                <label for="">sin tacc</label>
             </div>
+        </div>
+        <div class="compras">
+            <p>¿Que queres comprar?</p>
+            <div class="sub-compras">
+                <img class="icon" src="/img/icons/pan1.png" alt="">
+                <label><input type="checkbox" />Pan</label>
+            </div>
+            <div class="sub-compras">
+                <img class="icon" src="/img/icons/spaguetti3.png" alt="">
+                <label><input type="checkbox" />Pastas</label>
+            </div>
+            <div class="sub-compras">
+                <img class="icon" src="/img/icons/salsa.png" alt="">
+                <label><input type="checkbox" />Salsas</label>
+            </div>
+            <div>
+                <input type="radio" id="aceptar" name="aceptar2" value="aceptar3" checked>
+                <label for="aceptar">Acepto los terminos</label>
+            </div>
+            <input type="submit" value="Enviar">
+        </div>
     </div>
-    <div class="gustos">
-        <p>¿Que tipo de comensal sos?</p>
-        <div class="sub_gustos">
-            <img class="icon"src="/img/icons/pasta1.png" alt="">
-            <input type="radio">
-            <label for="">Vegano</label>
-        </div>
-        <div class="sub_gustos">
-            <img class="icon" src="/img/icons/pasta2.png" alt="">
-            <input type="radio">
-            <label for="">Vegetariano</label>
-        </div>
-        <div class="sub_gustos">
-            <img class="icon" src="/img/icons/pasta3.png" alt="">
-            <input type="radio">
-            <label for="">como de todo</label>
-        </div>
-        <div  class="sub_gustos">
-            <img class="icon" src="/img/icons/gluten1.png" alt="">
-            <input type="radio">
-            <label for="">sin tacc</label>
-        </div>
     </div>
-    <div class="compras">
-        <p>¿Que queres comprar?</p>
-        <div class="sub-compras">
-            <img class="icon" src="/img/icons/pan1.png" alt="">
-            <label><input type="checkbox" />Pan</label>
-        </div>
-        <div class="sub-compras">
-            <img class="icon" src="/img/icons/spaguetti3.png" alt="">
-            <label><input type="checkbox" />Pastas</label>
-        </div>
-        <div class="sub-compras">
-            <img class="icon" src="/img/icons/salsa.png" alt="">
-            <label><input type="checkbox" />Salsas</label>
+    <footer id="footer">
+        <div class="foot_contactos">
+            <img class="logo" src="/img/icons/logo_200x200.png" alt="">
+            <div>
+                <img src="/img/icons/icons8-instagram-24.png" alt="">
+                <a href="https://www.instagram.com/maspanxfavor/">Instagram</a>
+            </div>
+            <div>
+                <img src="/img/icons/facebook.png" alt="">
+                <a href="https://www.facebook.com/florencia.vazquez.75641">facebook</a>
+            </div>
+            <div>
+                <img src="/img/icons/whatsapp.png" alt="">
+                <a href="">+54 111234567</a>
+            </div>
         </div>
         <div>
-            <input type="radio" id="aceptar" name="aceptar2" value="aceptar3" checked>
-            <label for="aceptar">Acepto los terminos</label>
-        </div>
-        <input type="submit" value="Enviar">
-    </div>
-    </div>
-    <footer>
-        <div class="foot">
-            <i class="fa-brands fa-instagram"></i>
-            <a href="https://www.instagram.com/maspanxfavor/">Instagram</a>
-            <a href="https://www.facebook.com/florencia.vazquez.75641">facebook</a>
             2016 &copy; Florpastas
         </div>
     </footer>
