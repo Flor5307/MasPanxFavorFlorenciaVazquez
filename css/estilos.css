@@ -18,7 +18,7 @@ header {
 
 h2.first {
     padding-top: 40px;
-    color: #ddd;
+    color: black;
     text-align: center;
     font-size: 25px;
     font-family: serif;
@@ -29,7 +29,7 @@ h1 {
     font-size: 50px;
     text-align: center;
     font-family:Georgia, 'Times New Roman', Times, serif ;
-    color: antiquewhite;
+    color: black;
 }
 
 h2 {
@@ -54,6 +54,7 @@ div.center {
 #menu {
     margin: 0%;
     text-align: center;
+    text-decoration: n;
 }
 
 .imgclass {
@@ -183,18 +184,20 @@ div.item8 {
 ul li {
     display: inline;
     border-width: 2px;
-    list-style-type: none;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.397);
     color: #000;
 }
 
 ul li :hover {
     display: inline;
-    background-color: rgba(0, 0, 0, 0.158);
-    color: black;
+    color: wheat;
+    background-color: rgba(0, 0, 0, 0.411);
     text-decoration: solid;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     text-transform: uppercase;
+    text-decoration: none;
     transition: all 0.3s;
 }
 
@@ -202,7 +205,7 @@ ul li :hover {
     ul li {
         display: inline-block;
         background-color: transparent;
-        list-style-type: none;
+        text-decoration: none;
         color: black;
         text-decoration: solid;
         font-family: Arial, Helvetica, sans-serif;
@@ -215,7 +218,7 @@ ul li :hover {
 @media only screen and (min-width:200px) {
     ul li {
         display: inline-block;
-        list-style-type: none;
+        text-decoration: none;
         background-color: transparent;
         color: black;
         text-decoration: solid;
@@ -224,22 +227,6 @@ ul li :hover {
         text-transform: capitalize;
         transition: all 0.3s;
     }
-
-    h2.first {
-        padding-top: 40px;
-        color: rgb(0, 0, 0);
-        text-align: center;
-        font-size: 15px;
-        font-family: serif;
-    }
-
-    h1 {
-        font-size: 30px;
-        text-align: center;
-        font-family: 'Lora', serif;
-        color: rgb(0, 0, 0);
-    }
-
     header {
         height: 250px;
         width: 100%;
@@ -292,11 +279,9 @@ img.presentacion {
 .flex-outer {
     list-style-type: none;
     padding: 0;
-}
-
-.flex-outer {
     max-width: 400px;
     margin: 0 auto;
+    background-color: aquamarine;
 }
 
 .flex-outer li {
@@ -358,6 +343,16 @@ img.presentacion {
     height: 64px;
     margin: 8px;
 }
+p.title {
+    width: 200px;
+    height: 50px;
+    background-color: rgba(0, 255, 255, 0.616);
+    border: solid #000 1px;
+}
+div.radio {
+    justify-content: space-around;
+    display: flex;
+}
 
 div.gustos :hover {
     text-transform: uppercase;
@@ -366,7 +361,9 @@ div.gustos :hover {
 
 div.sub_gustos {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 255, 255, 0.144);
+    border-radius: solid #000 2px;
 }
 
 div.compras :hover {
@@ -376,9 +373,14 @@ div.compras :hover {
 
 div.sub-compras {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 255, 255, 0.144);
+    border-radius: solid #000 2px;
 }
-
+.terminos :hover {
+    background-color: rgba(0, 0, 0, 0.438);
+    color: red;
+}
 footer {
     background-color: #000;
     height: auto;
@@ -455,18 +457,18 @@ footer {
     float: right;
 } 
 .footer-menu ul li {
-    padding-right: 10px;   
+    padding-right: 10px; 
+    text-decoration: none; 
 }
 @media (max-width:500px) {
     .footer-menu ul {
         display: flex;
+        text-decoration: none;
         margin-top: 10px;
         margin-bottom: 20px;
         border-radius: 15px;
+        color: wheat;
     }
-}
-.foot_contactos>* {
-    flex: 1;
 }
 
 #tabla__precios {
@@ -493,21 +495,7 @@ footer {
         justify-content: center;
         margin: 30px 20px 10px 16px;
     }
-
-    /*.precio-col:nth-child(1) : {
-      background-color: red;
-      flex: 50%;
-    }
-  
-    .precio-col:nth-child(2) : {
-      flex: 50%;
-    }
-  
-    .precio-col:nth-child(3) : {
-      flex: 100%;
-    }*/
 }
-
 #tabla__precios:nth-child(1) .precio-col {
     flex: 1;
     background-color: red;
