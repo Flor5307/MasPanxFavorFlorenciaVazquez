@@ -377,9 +377,16 @@ div.sub-compras {
     background-color: rgba(0, 255, 255, 0.144);
     border-radius: solid #000 2px;
 }
-.terminos :hover {
+.pedir {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pedir :hover {
     background-color: rgba(0, 0, 0, 0.438);
-    color: red;
+    color: rgb(0, 217, 255);
+    text-transform: uppercase;
 }
 footer {
     background-color: #000;
