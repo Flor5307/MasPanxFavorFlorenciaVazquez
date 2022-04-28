@@ -70,6 +70,7 @@ div.center {
     animation-name: img-home;
     animation-iteration-count: infinite;
     animation-timing-function: ease;
+    animation-direction: alternate;
     animation-duration: 3s;
     animation-delay: 0s;
     width: auto;
@@ -519,6 +520,12 @@ footer {
     margin: 30px 20px 10px 16px;
     border-radius: 20px;
     box-shadow: 4px 4px 4px #ddd
+}
+.precio-col-features :hover {
+    color: wheat;
+    transition: 0,3s;
+    text-transform: uppercase;
+
 }
 
 @media only screen and (min-width:768px) {
