@@ -28,7 +28,7 @@ h1 {
     padding-top: 6px;
     font-size: 50px;
     text-align: center;
-    font-family:Georgia, 'Times New Roman', Times, serif ;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
     color: black;
 }
 
@@ -42,6 +42,7 @@ h2 {
 
 div.center {
     text-align: center;
+    background: radial-gradient(white, rgba(92, 46, 27, 0.637) );
 }
 
 .img-home {
@@ -54,7 +55,24 @@ div.center {
 #menu {
     margin: 0%;
     text-align: center;
-    text-decoration: n;
+    text-decoration: none;
+}
+
+@keyframes img-home{
+    0% {width: 200px;}
+    25% {width: 300px;}
+    50% {width: 200px;}
+    75% { width: 300px;}
+    100% {width: 200px;}
+}
+.img-home {
+    height: auto;
+    animation-name: img-home;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    width: auto;
 }
 
 .imgclass {
@@ -62,7 +80,6 @@ div.center {
     width: 100%;
     display: grid;
     color: rgb(245, 245, 245);
-    margin-top: 20px;
 }
 
 div.img {
@@ -237,7 +254,10 @@ ul li :hover {
         height: 100px;
     }
 }
-
+/* index */
+.back-blog{
+    background: radial-gradient(white, rgba(248, 193, 141, 0.637) );
+}
 .blog__texto--color {
     width: 70%;
     border: solid black;
@@ -247,8 +267,9 @@ ul li :hover {
     padding-right: 5%;
     margin: 70px;
     display: flex;
-}
-
+    background: radial-gradient(rgba(243, 195, 151, 0.637), white );
+} 
+/* home */
 img.presentacion {
     display: flex;
     max-width: 40%;
@@ -332,7 +353,9 @@ img.presentacion {
     text-transform: uppercase;
     border-radius: 2px;
 }
-
+.all{
+    background: radial-gradient( white, rgba(136, 235, 235, 0.534));
+}
 .form {
     text-align: center;
     font-size: 25px;
@@ -362,7 +385,7 @@ div.gustos :hover {
 div.sub_gustos {
     display: flex;
     flex-direction: column;
-    background-color: rgba(0, 255, 255, 0.144);
+    background: radial-gradient(#ffffff6e, #57e1e660);
     border-radius: solid #000 2px;
 }
 
@@ -377,6 +400,7 @@ div.sub-compras {
     background-color: rgba(0, 255, 255, 0.144);
     border-radius: solid #000 2px;
 }
+
 .pedir {
     display: flex;
     align-items: center;
@@ -484,6 +508,7 @@ footer {
     flex-direction: row;
     grid-row: 2/3;
     text-align: center;
+    background: radial-gradient( white, rgb(185, 185, 184));
 }
 
 /*Columnas*/
