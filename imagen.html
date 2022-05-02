@@ -17,15 +17,39 @@
             <h2 class="first">Chef</h2>
             <h1>Flor Vazquez</h1>
         </div>
-        <div>
-            <ul id="menu">
-                <li><strong><a href="home.html">Home</a></strong></li>
-                <li><strong><a href="index.html">Blog personal</a></strong></li>
-                <li><strong><a href="imagen.html">Mis trabajos</a></strong></li>
-                <li><strong><a href="precios.html">Compras online</a></strong></li>
-                <li><strong><a href="contacto.html">Contacto</a></strong></li>
-            </ul>
-        </div>
+        <!--inicia navbar-->
+        <nav class="navbar navbar-expand-md bg-gradient-light navbar-dark">
+            <!-- Brand
+                <a class="navbar-brand" href="#">Menu:</a> -->
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler dropup" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon bg-dark"></span>
+            </button>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="imagen.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="precios.html">Compras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="recetas.html">El producto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--termina navbar-->
     </header>
     <section class="imgclass">
         <div class="img item1">item1</div>
@@ -42,7 +66,7 @@
             <div>
                 <h3>Mas pan x favor</h3>
                 <p>Mas pan por favor hace todos sus productos a mano.
-                    todos los productos son organicos y de confiar
+                    Todos los productos son organicos y de confiar
                 </p>
             </div>
             <ul class="foot_contactos">
@@ -61,19 +85,24 @@
             </ul>
             <div class="footer-bottom">
                 <p>2016 &copy; Florpastas</p>
-
-                <div class="footer-menu">
-                    <ul>
-                        <li><a href="home.html">Home</a></li>
-                        <li><a href="index.html">Blog personal</a></li>
-                        <li><a href="imagen.html">Mis trabajos</a></li>
-                        <li><a href="precios.html">Compras online</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                    </ul>
-                </div>
+            </div>
+            <div>
+                <ul class="pagination ">
+                    <li class="page-item"><a class="page-link" href="home.html">Home</a></li>
+                    <li class="page-item"><a class="page-link" href="index.html">Blog</a></li>
+                    <li class="page-item"><a class="page-link" href="imagen.html">Galeria</a></li>
+                    <li class="page-item"><a class="page-link" href="precios.html">Compras online</a></li>
+                    <li class="page-item"><a class="page-link" href="contacto.html">Contacto</a></li>
+                </ul>
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
