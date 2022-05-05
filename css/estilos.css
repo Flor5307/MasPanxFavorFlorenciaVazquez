@@ -1,13 +1,12 @@
 body {
     display: grid;
-    margin: -48px 0px 0px 0px;
-    border: 0px;
-    padding: 0px;
+    margin-top: -48px;
     background-color: white;
     grid-template-rows: 250px auto 100px;
     grid-template-columns: auto;
 }
 
+/*nav*/
 header {
     height: 250px;
     width: 100%;
@@ -15,188 +14,30 @@ header {
     background-position: center;
     background-size: auto;
 }
+
 .nav-item{
     background-color: rgba(0, 0, 0, 0.267);
 }
+
 .navbar-toggler-icon{
     position: absolute;
 }
-h2.first {
+
+.first {
     padding-top: 50px;
     color: black;
     text-align: center;
-    font-size: 25px;
-    font-family: serif;
+    font-size: 35px;
+    font-family: 'Quicksand', sans-serif;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
 }
 
 h1 {
-    padding-top: 6px;
-    font-size: 50px;
+    font-size: 75px;
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif ;
+    font-family: 'Shadows Into Light';
     color: black;
-}
-
-h2 {
-    padding: 16px 0px 0px 16px;
-    font-size: 24px;
-    text-align: left;
-    font-family: 'Lora', serif;
-    color: black;
-}
-.navbar {
-    position: absolute;
-}
-div.center {
-    text-align: center;
-    background: radial-gradient(white, rgba(92, 46, 27, 0.637) );
-}
-
-.img-home {
-    width: 500px;
-    height: 1000px;
-    border: solid black 2px;
-    background-color: red;
-}
-
-#menu {
-    margin: 0%;
-    text-align: center;
-}
-.menu-top{
-    color: #000;
-    text-decoration: none;
-}
-
-.imgclass {
-    min-height: 1000px;
-    width: 100%;
-    display: grid;
-    color: rgb(245, 245, 245);
-}
-
-div.img {
-    border: 4px solid black;
-    background-size: cover;
-    background-position: center;
-}
-
-div.item1 {
-    background-image: url(/img/mano\ raviolon.jpg);
-    background-color: #dd9933;
-}
-
-div.item2 {
-    background-color: red;
-    background-image: url(/img/perspectiva.raviolon.jpg);
-}
-
-div.item3 {
-    background-image: url(/img/huevos.vertical.jpg);
-    background-color: aliceblue;
-}
-
-div.item4 {
-    background-image: url(/img/fideos.jpg);
-    background-color: violet;
-}
-
-div.item5 {
-    background-color: orangered;
-    background-image: url(/img/medias.jpg);
-}
-
-div.item6 {
-    background-image: url(/img/pan\ trenza.jpg);
-    background-color: yellow;
-}
-
-div.item7 {
-    background-image: url(/img/cappeletti.jpg);
-    background-color: green;
-}
-
-div.item8 {
-    background-image: url(/img/raviolplancha..jpg);
-    background-color: brown;
-}
-
-@media only screen and (min-width:240px) {
-    .imgclass {
-        grid-template-rows: repeat(8, 300px);
-    }
-}
-
-@media only screen and (min-width: 380px) {
-    .imgclass {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 300px);
-    }
-}
-
-@media only screen and (min-width:530px) {
-
-    .imgclass {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(8, 1fr);
-    }
-
-    div.item1 {
-        grid-column: 1/2;
-        grid-row: 1/4;
-        background-color: #dd9933;
-    }
-
-    div.item2 {
-        background-color: red;
-        grid-column: 2/4;
-        grid-row: 1/4;
-    }
-
-    div.item3 {
-        background-color: aliceblue;
-        grid-column: 4/5;
-        grid-row: 1/5;
-    }
-
-    div.item4 {
-        grid-column: 2/3;
-        grid-row: 4/7;
-        background-color: violet;
-    }
-
-    div.item5 {
-        grid-column: 3/4;
-        grid-row: 4/9;
-        background-color: beige;
-    }
-
-    div.item6 {
-        grid-column: 1/2;
-        grid-row: 4/9;
-        background-color: yellow;
-    }
-
-    div.item7 {
-        grid-column: 4/5;
-        grid-row: 5/9;
-        background-color: green;
-    }
-
-    div.item8 {
-        grid-column: 2/3;
-        grid-row: 7/9;
-        background-color: brown;
-    }
-
-}
-
-ul li {
-    display: inline;
-    border-width: 2px;
-    text-decoration: none;
-    background-color: rgba(0, 0, 0, 0.397);
-    color: #000;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
 }
 
 ul li :hover {
@@ -215,9 +56,7 @@ ul li :hover {
     ul li {
         display: inline-block;
         background-color: transparent;
-        text-decoration: none;
         color: black;
-        text-decoration: solid;
         font-family: Arial, Helvetica, sans-serif;
         text-align: center;
         text-transform: uppercase;
@@ -228,10 +67,8 @@ ul li :hover {
 @media only screen and (min-width:200px) {
     ul li {
         display: inline-block;
-        text-decoration: none;
         background-color: transparent;
         color: black;
-        text-decoration: solid;
         font-family: Arial, Helvetica, sans-serif;
         text-align: center;
         text-transform: capitalize;
@@ -241,12 +78,140 @@ ul li :hover {
         height: 250px;
         width: 100%;
     }
+}
+.navbar {
+    position: absolute;
+}
 
-    #logo {
-        width: 200px;
-        height: 100px;
+#collapsibleNavbar {
+    z-index: 100;
+}
+/*fin-header*/
+
+/*galeria inicia*/
+.imgclass {
+    min-height: 1000px;
+    width: 100%;
+    display: grid;
+    color: rgb(245, 245, 245);
+}
+
+.img {
+    border: 4px solid black;
+    background-size: cover;
+    background-position: center;
+}
+
+.item1 {
+    background-image: url(/img/mano\ raviolon.jpg);
+    background-color: #dd9933;
+}
+
+.item2 {
+    background-color: red;
+    background-image: url(/img/perspectiva.raviolon.jpg);
+}
+
+.item3 {
+    background-image: url(/img/huevos.vertical.jpg);
+    background-color: aliceblue;
+}
+
+.item4 {
+    background-image: url(/img/fideos.jpg);
+    background-color: violet;
+}
+
+.item5 {
+    background-color: orangered;
+    background-image: url(/img/medias.jpg);
+}
+
+.item6 {
+    background-image: url(/img/pan\ trenza.jpg);
+    background-color: yellow;
+}
+
+.item7 {
+    background-image: url(/img/cappeletti.jpg);
+    background-color: green;
+}
+
+.item8 {
+    background-image: url(/img/raviolplancha..jpg);
+    background-color: brown;
+}
+
+@media only screen and (min-width:240px) {
+    .imgclass {
+        grid-template-rows: repeat(8, 300px);
     }
 }
+
+@media only screen and (min-width: 380px) {
+    .imgclass {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 300px);
+    }
+}
+
+@media only screen and (min-width:530px) {
+    .imgclass {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+    }
+
+    .item1 {
+        grid-column: 1/2;
+        grid-row: 1/4;
+        background-color: #dd9933;
+    }
+
+    .item2 {
+        background-color: red;
+        grid-column: 2/4;
+        grid-row: 1/4;
+    }
+
+    .item3 {
+        background-color: aliceblue;
+        grid-column: 4/5;
+        grid-row: 1/5;
+    }
+
+    .item4 {
+        grid-column: 2/3;
+        grid-row: 4/7;
+        background-color: violet;
+    }
+
+    .item5 {
+        grid-column: 3/4;
+        grid-row: 4/9;
+        background-color: beige;
+    }
+
+    .item6 {
+        grid-column: 1/2;
+        grid-row: 4/9;
+        background-color: yellow;
+    }
+
+    .item7 {
+        grid-column: 4/5;
+        grid-row: 5/9;
+        background-color: green;
+    }
+
+    .item8 {
+        grid-column: 2/3;
+        grid-row: 7/9;
+        background-color: brown;
+    }
+
+}
+/* galeria termina */
+
 /* index */
 .image {
     width: 100%;
@@ -258,30 +223,28 @@ ul li :hover {
     width: 100%;
     height: auto;
 }
+/*index fin*/
+
 .card-img-top{
     height: 400px;
     width: 198px;
 }
-/* home */
-img.presentacion {
-    display: flex;
-    max-width: 40%;
-    height: 500px;
+
+/*home*/
+.center {
+    text-align: center;
+    background: radial-gradient(wheat, rgba(105, 45, 19, 0.404) );
 }
-.img-carousel {
+
+.img-home {
     width: 500px;
     height: 1000px;
+    border: solid black 2px;
+    background-color: red;
 }
-.container {
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+/*fin-home*/
 
-.container * {
-    box-sizing: border-box;
-}
-
+/*contacto*/
 .flex-outer {
     padding: 0;
     max-width: 400px;
@@ -313,8 +276,7 @@ img.presentacion {
     max-width: 200px;
 }
 
-.flex-outer>li>label+*,
-.flex-inner {
+.flex-outer>li>label+*{
     flex: 1 0 275px;
 }
 
@@ -337,9 +299,11 @@ img.presentacion {
     text-transform: uppercase;
     border-radius: 2px;
 }
+
 .all{
-    background: radial-gradient( white, rgba(136, 235, 235, 0.534));
+    background: radial-gradient( white, rgba(213, 250, 250, 0.534));
 }
+
 .form {
     text-align: center;
     font-size: 25px;
@@ -350,38 +314,34 @@ img.presentacion {
     height: 64px;
     margin: 8px;
 }
-p.title {
-    width: 200px;
-    height: 50px;
-    background-color: rgba(0, 255, 255, 0.616);
-    border: solid #000 1px;
-}
-div.radio {
+
+
+.radio {
     justify-content: space-around;
     display: flex;
 }
 
-div.gustos :hover {
+.gustos :hover {
     text-transform: uppercase;
     border-radius: 2px;
 }
 
-div.sub_gustos {
+.sub_gustos {
     display: flex;
     flex-direction: column;
-    background-color: rgba(0, 255, 255, 0.144);
+    background-color: rgba(0, 255, 255, 0.055);
     border-radius: solid #000 2px;
 }
 
-div.compras :hover {
+.compras :hover {
     text-transform: uppercase;
     border-radius: 2px;
 }
 
-div.sub-compras {
+.sub-compras {
     display: flex;
     flex-direction: column;
-    background-color: rgba(0, 255, 255, 0.144);
+    background-color: rgba(0, 255, 255, 0.068);
     border-radius: solid #000 2px;
 }
 
@@ -396,6 +356,8 @@ div.sub-compras {
     color: rgb(0, 217, 255);
     text-transform: uppercase;
 }
+/* contacto-fin*/
+/* footer*/
 footer {
     background-color: #000;
     height: auto;
@@ -411,7 +373,7 @@ footer {
     background-color: #000;
 }
 
-.footer-content h3 {
+.footer-content h4 {
     font-size: 30px;
     color: wheat;
     text-transform: capitalize;
@@ -468,9 +430,11 @@ footer {
     font-size: 16px;
     text-decoration: none;
 }
+
 .footer-menu {
     float: right;
 } 
+
 .footer-menu ul li {
     padding-right: 10px; 
     text-decoration: none; 
@@ -485,10 +449,14 @@ footer {
         color: wheat;
     }
 }
+
 .page-link{
     color: wheat;
     background-color: transparent;
 }
+/*fin-footer*/
+
+/*Precios*/
 #tabla__precios {
     display: flex;
     flex-wrap: wrap;
@@ -497,8 +465,6 @@ footer {
     text-align: center;
     background: radial-gradient( white, rgb(185, 185, 184));
 }
-
-/*Columnas*/
 .precio-col {
     display: inline-flex;
     flex-direction: column;
