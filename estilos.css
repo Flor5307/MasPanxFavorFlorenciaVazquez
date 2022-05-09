@@ -45,7 +45,8 @@ ul li :hover {
   display: inline;
   color: black;
   background-color: rgba(0, 0, 0, 0.411);
-  text-decoration: solid;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   text-transform: uppercase;
@@ -582,6 +583,4 @@ footer {
 .precio-col-comprar:hover a {
   color: #dd9933;
   transition: all 0.3s;
-}
-
-/*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,587 @@
+body {
+    display: grid;
+    margin-top: -48px;
+    background-color: white;
+    grid-template-rows: 250px auto 100px;
+    grid-template-columns: auto;
+}
+
+/*nav*/
+header {
+    height: 250px;
+    width: 100%;
+    background-image: url(/img/header.jpg);
+    background-position: center;
+    background-size: auto;
+}
+
+.nav-item{
+    background-color: rgba(0, 0, 0, 0.267);
+}
+
+.navbar-toggler-icon{
+    position: absolute;
+}
+
+.first {
+    padding-top: 50px;
+    color: black;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Quicksand', sans-serif;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+h1 {
+    font-size: 75px;
+    text-align: center;
+    font-family: 'Shadows Into Light';
+    color: black;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+ul li :hover {
+    display: inline;
+    color: black;
+    background-color: rgba(0, 0, 0, 0.411);
+    text-decoration: solid;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+@media only screen and (min-width:355px) {
+    ul li {
+        display: inline-block;
+        background-color: transparent;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        text-transform: uppercase;
+        transition: all 0.3s;
+    }
+}
+
+@media only screen and (min-width:200px) {
+    ul li {
+        display: inline-block;
+        background-color: transparent;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        text-transform: capitalize;
+        transition: all 0.3s;
+    }
+    header {
+        height: 250px;
+        width: 100%;
+    }
+}
+.navbar {
+    position: absolute;
+}
+
+#collapsibleNavbar {
+    z-index: 100;
+}
+/*fin-header*/
+
+/*galeria inicia*/
+.imgclass {
+    min-height: 1000px;
+    width: 100%;
+    display: grid;
+    color: rgb(245, 245, 245);
+}
+
+.img {
+    border: 4px solid black;
+    background-size: cover;
+    background-position: center;
+}
+
+.item1 {
+    background-image: url(/img/mano\ raviolon.jpg);
+    background-color: #dd9933;
+}
+
+.item2 {
+    background-color: red;
+    background-image: url(/img/perspectiva.raviolon.jpg);
+}
+
+.item3 {
+    background-image: url(/img/huevos.vertical.jpg);
+    background-color: aliceblue;
+}
+
+.item4 {
+    background-image: url(/img/fideos.jpg);
+    background-color: violet;
+}
+
+.item5 {
+    background-color: orangered;
+    background-image: url(/img/medias.jpg);
+}
+
+.item6 {
+    background-image: url(/img/pan\ trenza.jpg);
+    background-color: yellow;
+}
+
+.item7 {
+    background-image: url(/img/cappeletti.jpg);
+    background-color: green;
+}
+
+.item8 {
+    background-image: url(/img/raviolplancha..jpg);
+    background-color: brown;
+}
+
+@media only screen and (min-width:240px) {
+    .imgclass {
+        grid-template-rows: repeat(8, 300px);
+    }
+}
+
+@media only screen and (min-width: 380px) {
+    .imgclass {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 300px);
+    }
+}
+
+@media only screen and (min-width:530px) {
+    .imgclass {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+    }
+
+    .item1 {
+        grid-column: 1/2;
+        grid-row: 1/4;
+        background-color: #dd9933;
+    }
+
+    .item2 {
+        background-color: red;
+        grid-column: 2/4;
+        grid-row: 1/4;
+    }
+
+    .item3 {
+        background-color: aliceblue;
+        grid-column: 4/5;
+        grid-row: 1/5;
+    }
+
+    .item4 {
+        grid-column: 2/3;
+        grid-row: 4/7;
+        background-color: violet;
+    }
+
+    .item5 {
+        grid-column: 3/4;
+        grid-row: 4/9;
+        background-color: beige;
+    }
+
+    .item6 {
+        grid-column: 1/2;
+        grid-row: 4/9;
+        background-color: yellow;
+    }
+
+    .item7 {
+        grid-column: 4/5;
+        grid-row: 5/9;
+        background-color: green;
+    }
+
+    .item8 {
+        grid-column: 2/3;
+        grid-row: 7/9;
+        background-color: brown;
+    }
+
+}
+/* galeria termina */
+
+/* index */
+.image {
+    width: 100%;
+    height: auto;
+}
+
+.blog {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+/*index fin*/
+
+.card-img-top{
+    height: 400px;
+    width: 198px;
+}
+
+/*home*/
+.center {
+    text-align: center;
+    background: radial-gradient(wheat, rgba(105, 45, 19, 0.404) );
+}
+
+.img-home {
+    width: 500px;
+    height: 1000px;
+    border: solid black 2px;
+    background-color: red;
+}
+/*fin-home*/
+
+/*contacto*/
+.flex-outer {
+    padding: 0;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: aquamarine;
+}
+
+.flex-outer li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.flex-outer>li :hover {
+    margin-bottom: 10px;
+}
+
+.flex-outer li label,
+.flex-outer li p {
+    padding: 8px;
+    font-weight: 300;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+}
+
+.flex-outer>li>label,
+.flex-outer li p {
+    flex: 1 0 120px;
+    max-width: 200px;
+}
+
+.flex-outer>li>label+*{
+    flex: 1 0 275px;
+}
+
+.flex-outer li p {
+    margin: 0;
+}
+
+.flex-outer li input:not([type='checkbox']),
+.flex-outer li textarea {
+    padding: 15px;
+    border: none;
+}
+
+.flex-outer li button {
+    margin-left: auto;
+    padding: 8px 16px;
+    border: none;
+    background: rgb(228, 224, 224);
+    color: #f2f2f2;
+    text-transform: uppercase;
+    border-radius: 2px;
+}
+
+.all{
+    background: radial-gradient( white, rgba(213, 250, 250, 0.534));
+}
+
+.form {
+    text-align: center;
+    font-size: 25px;
+}
+
+.icon {
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+}
+
+
+.radio {
+    justify-content: space-around;
+    display: flex;
+}
+
+.gustos :hover {
+    text-transform: uppercase;
+    border-radius: 2px;
+}
+
+.sub_gustos {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 255, 255, 0.055);
+    border-radius: solid #000 2px;
+}
+
+.compras :hover {
+    text-transform: uppercase;
+    border-radius: 2px;
+}
+
+.sub-compras {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 255, 255, 0.068);
+    border-radius: solid #000 2px;
+}
+
+.pedir {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pedir :hover {
+    background-color: rgba(0, 0, 0, 0.438);
+    color: rgb(0, 217, 255);
+    text-transform: uppercase;
+}
+/* contacto-fin*/
+/* footer*/
+footer {
+    background-color: #000;
+    height: auto;
+    width: auto;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #000;
+}
+
+.footer-content h4 {
+    font-size: 30px;
+    color: wheat;
+    text-transform: capitalize;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #cacdd2;
+}
+
+.foot_contactos {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot_contactos li {
+    margin: 0 10px;
+    background-color: rgba(255, 255, 255, 0.212);
+    border-radius: 15px;
+}
+
+.foot_contactos a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+}
+
+.foot_contactos a {
+    font-size: 1.1rem;
+    width: 20px;
+    transition: color .4s;
+}
+
+.footer-bottom {
+    color: #000;
+    width: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    float: left;
+    font-size: 14px;
+    word-spacing: 10px;
+    text-transform: capitalize;
+}
+
+.footer-bottom p {
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.footer-menu {
+    float: right;
+} 
+
+.footer-menu ul li {
+    padding-right: 10px; 
+    text-decoration: none; 
+}
+@media (max-width:500px) {
+    .footer-menu ul {
+        display: flex;
+        text-decoration: none;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 15px;
+        color: wheat;
+    }
+}
+
+.page-link{
+    color: wheat;
+    background-color: transparent;
+}
+/*fin-footer*/
+
+/*Precios*/
+#tabla__precios {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    grid-row: 2/3;
+    text-align: center;
+    background: radial-gradient( white, rgb(185, 185, 184));
+}
+.precio-col {
+    display: inline-flex;
+    flex-direction: column;
+    background-color: #4b494969;
+    margin: 30px 20px 10px 16px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px #ddd
+}
+.precio-col-features :hover {
+    color: wheat;
+    transition: 0,3s;
+    text-transform: uppercase;
+
+}
+
+@media only screen and (min-width:768px) {
+    .precio-col {
+        float: left;
+        justify-content: center;
+        margin: 30px 20px 10px 16px;
+    }
+}
+#tabla__precios:nth-child(1) .precio-col {
+    flex: 1;
+    background-color: red;
+}
+
+#tabla__precios:nth-child(2) .precio-col {
+    flex: 1;
+    background-color: rgba(62, 62, 65, 0.548);
+}
+
+#tabla__precios:nth-child(3) .precio-col {
+    flex: 1;
+    background-color: green;
+}
+
+.precio-titulo {
+    background-color: rgba(128, 128, 128, 0.61);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    flex: 20%;
+    align-items: baseline;
+    max-height: 80px;
+}
+
+.producto {
+    align-self: center;
+}
+
+/*Headers*/
+.precio-col-header {
+    background-color: rgba(51, 51, 51, 0.726);
+    padding: 20px;
+    flex: 20%;
+    align-items: baseline;
+}
+
+.precio-col-header h3 {
+    color: #f3f3f3;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.precio-col-header p {
+    text-align: center;
+    color: #f3f3f3;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+/*Características*/
+.precio-col-features {
+    padding: 0 20px 20px 20px
+}
+
+.precio-col-features p {
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+    border-top: 1px solid #ddd
+}
+
+.precio-col-features p:first-child,
+.precio-col-features p:last-child {
+    border-bottom: none
+}
+
+/*Comprar*/
+.precio-col-comprar {
+    padding: 10px;
+    min-width: 250px;
+    align-self: flex-end;
+    text-align: center;
+    background-color: #dd9933;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+    border: 2px solid #dd9933;
+    transition: all 0.3s
+}
+
+.precio-col-comprar a {
+    color: #f3f3f3;
+    padding: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: all 0.3s
+}
+
+.precio-col-comprar:hover {
+    background-color: #f3f3f3;
+    transition: all 0.3s;
+}
+
+.precio-col-comprar:hover a {
+    color: #dd9933;
+    transition: all 0.3s
+}
