@@ -1,7 +1,15 @@
+/*paleta de colores primarios*/
+$primary-1: #7C8C03;
+$primary-2: #6F7302;
+$primary-3: #734002;
+$primary-4: #8C7B65;
+$primary-5: #CF4503;
+
+
 body {
     display: grid;
     margin-top: -48px;
-    background-color: white;
+    background: radial-gradient(wheat, $primary-4, $primary-3);
     grid-template-rows: 250px auto 100px;
     grid-template-columns: auto;
 }
@@ -13,14 +21,6 @@ header {
     background-image: url(/img/header.jpg);
     background-position: center;
     background-size: auto;
-}
-
-.nav-item{
-    background-color: rgba(0, 0, 0, 0.267);
-}
-
-.navbar-toggler-icon{
-    position: absolute;
 }
 
 .first {
@@ -40,15 +40,33 @@ h1 {
     text-shadow: 2px 2px 4px rgb(0, 0, 0);
 }
 
-ul li :hover {
-    display: inline;
-    color: black;
-    background-color: rgba(0, 0, 0, 0.411);
-    text-decoration: solid;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    text-transform: uppercase;
-    transition: all 0.3s;
+ul li {
+    .nav-item {
+        background-color: rgba(0, 0, 0, 0.267);
+    }
+
+    .navbar {
+        position: absolute;
+    }
+
+    & :hover {
+        display: inline;
+        color: black;
+        background-color: rgba(0, 0, 0, 0.411);
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        text-transform: uppercase;
+        transition: all 0.3s;
+    }
+}
+
+.navbar-toggler-icon {
+    position: absolute;
+}
+
+#collapsibleNavbar {
+    z-index: 100;
+    background-color: #8c7b6586;
 }
 
 @media only screen and (min-width:355px) {
@@ -73,18 +91,13 @@ ul li :hover {
         text-transform: capitalize;
         transition: all 0.3s;
     }
+
     header {
         height: 250px;
         width: 100%;
     }
 }
-.navbar {
-    position: absolute;
-}
 
-#collapsibleNavbar {
-    z-index: 100;
-}
 /*fin-header*/
 
 /*galeria inicia*/
@@ -209,6 +222,7 @@ ul li :hover {
     }
 
 }
+
 /* galeria termina */
 
 /* index */
@@ -222,17 +236,18 @@ ul li :hover {
     width: 100%;
     height: auto;
 }
+
 /*index fin*/
 
-.card-img-top{
+.card-img-top {
     height: 400px;
     width: 198px;
 }
 
+
 /*home*/
 .center {
     text-align: center;
-    background: radial-gradient(wheat, rgba(105, 45, 19, 0.404) );
 }
 
 .img-home {
@@ -241,6 +256,7 @@ ul li :hover {
     border: solid black 2px;
     background-color: red;
 }
+
 /*fin-home*/
 
 /*contacto*/
@@ -248,7 +264,7 @@ ul li :hover {
     padding: 0;
     max-width: 400px;
     margin: 0 auto;
-    background-color: aquamarine;
+    background-color: $primary-3;
 }
 
 .flex-outer li {
@@ -275,7 +291,7 @@ ul li :hover {
     max-width: 200px;
 }
 
-.flex-outer>li>label+*{
+.flex-outer>li>label+* {
     flex: 1 0 275px;
 }
 
@@ -293,14 +309,13 @@ ul li :hover {
     margin-left: auto;
     padding: 8px 16px;
     border: none;
-    background: rgb(228, 224, 224);
     color: #f2f2f2;
     text-transform: uppercase;
     border-radius: 2px;
 }
 
-.all{
-    background: radial-gradient( white, rgba(213, 250, 250, 0.534));
+.all {
+    background: radial-gradient(wheat, $primary-4, $primary-3)
 }
 
 .form {
@@ -314,7 +329,6 @@ ul li :hover {
     margin: 8px;
 }
 
-
 .radio {
     justify-content: space-around;
     display: flex;
@@ -325,10 +339,13 @@ ul li :hover {
     border-radius: 2px;
 }
 
+.list-group-item {
+    background-color: $primary-3;
+}
+
 .sub_gustos {
     display: flex;
     flex-direction: column;
-    background-color: rgba(0, 255, 255, 0.055);
     border-radius: solid #000 2px;
 }
 
@@ -340,7 +357,6 @@ ul li :hover {
 .sub-compras {
     display: flex;
     flex-direction: column;
-    background-color: rgba(0, 255, 255, 0.068);
     border-radius: solid #000 2px;
 }
 
@@ -355,6 +371,7 @@ ul li :hover {
     color: rgb(0, 217, 255);
     text-transform: uppercase;
 }
+
 /* contacto-fin*/
 /* footer*/
 footer {
@@ -432,12 +449,13 @@ footer {
 
 .footer-menu {
     float: right;
-} 
+}
 
 .footer-menu ul li {
-    padding-right: 10px; 
-    text-decoration: none; 
+    padding-right: 10px;
+    text-decoration: none;
 }
+
 @media (max-width:500px) {
     .footer-menu ul {
         display: flex;
@@ -449,10 +467,11 @@ footer {
     }
 }
 
-.page-link{
+.page-link {
     color: wheat;
     background-color: transparent;
 }
+
 /*fin-footer*/
 
 /*Precios*/
@@ -462,19 +481,20 @@ footer {
     flex-direction: row;
     grid-row: 2/3;
     text-align: center;
-    background: radial-gradient( white, rgb(185, 185, 184));
 }
+
 .precio-col {
     display: inline-flex;
     flex-direction: column;
-    background-color: #4b494969;
+    background: radial-gradient(wheat, $primary-4, $primary-3);
     margin: 30px 20px 10px 16px;
     border-radius: 20px;
     box-shadow: 4px 4px 4px #ddd
 }
+
 .precio-col-features :hover {
     color: wheat;
-    transition: 0,3s;
+    transition: 0, 3s;
     text-transform: uppercase;
 
 }
@@ -486,6 +506,7 @@ footer {
         margin: 30px 20px 10px 16px;
     }
 }
+
 #tabla__precios:nth-child(1) .precio-col {
     flex: 1;
     background-color: red;
@@ -516,7 +537,7 @@ footer {
 
 /*Headers*/
 .precio-col-header {
-    background-color: rgba(51, 51, 51, 0.726);
+    background-color: $primary-3;
     padding: 20px;
     flex: 20%;
     align-items: baseline;
@@ -560,10 +581,10 @@ footer {
     min-width: 250px;
     align-self: flex-end;
     text-align: center;
-    background-color: #dd9933;
+    background-color: $primary-3;
     margin: 0 auto 20px;
     border-radius: 10px;
-    border: 2px solid #dd9933;
+    border: 2px solid $primary-3;
     transition: all 0.3s
 }
 
