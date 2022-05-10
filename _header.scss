@@ -1,0 +1,77 @@
+/*header*/
+header {
+    height: 250px;
+    width: 100%;
+    background-image: url(/img/header.jpg);
+    background-position: center;
+    background-size: auto;
+  }
+  
+  .first {
+    padding-top: 50px;
+    color: $primary-6;
+    text-align: center;
+    font-size: 35px;
+    font-family: $font-1;
+    text-shadow: $shadow-1;
+  }
+  
+  h1 {
+    font-size: 75px;
+    text-align: center;
+    font-family: $font-2;
+    color: $primary-6;
+    text-shadow: $shadow-1;
+  }
+  
+  .navbar-toggler-icon {
+    position: absolute;
+  }
+  
+  #collapsibleNavbar {
+    z-index: 100;
+    background-color: #8c7b6586;
+  }
+  
+  ul {
+    li {
+        .nav-item {
+            background-color: rgba(0, 0, 0, 0.267);
+        }
+  
+        .navbar {
+            position: absolute;
+        }
+  
+        &:hover {
+            display: inline;
+            color: $primary-6;
+            background-color: rgba(0, 0, 0, 0.411);
+            font-family: $font-3;
+            text-align: center;
+            text-transform: uppercase;
+            transition: all 0.3s;
+        }
+  
+        @media only screen and (min-width:350px) {
+            display: inline-block;
+            background-color: transparent;
+            color: $primary-6;
+            font-family: $font-3;
+            text-align: center;
+            transition: all 0.3s;
+            text-transform: capitalize;
+        }
+  
+        @media only screen and (min-width:200px) {
+            display: inline-block;
+            background-color: transparent;
+            color: $primary-6;
+            font-family: $font-3;
+            text-align: center;
+            transition: all 0.3s;
+            text-transform: uppercase;
+        }
+    }
+  }
+  /*fin-header*/
