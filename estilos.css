@@ -2,7 +2,7 @@
 body {
   display: grid;
   margin-top: -48px;
-  background: radial-gradient(wheat, #8C7B65, #734002);
+  background: radial-gradient(wheat, #8c7b65, #734002);
   grid-template-rows: 250px auto 100px;
   grid-template-columns: auto;
 }
@@ -33,22 +33,6 @@ h1 {
   text-shadow: 2px 2px 4px #000;
 }
 
-ul li .nav-item {
-  background-color: rgba(0, 0, 0, 0.267);
-}
-ul li .navbar {
-  position: absolute;
-}
-ul li :hover {
-  display: inline;
-  color: #000;
-  background-color: rgba(0, 0, 0, 0.411);
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  text-transform: uppercase;
-  transition: all 0.3s;
-}
-
 .navbar-toggler-icon {
   position: absolute;
 }
@@ -58,15 +42,30 @@ ul li :hover {
   background-color: rgba(140, 123, 101, 0.5254901961);
 }
 
-@media only screen and (min-width: 355px) {
+ul li .nav-item {
+  background-color: rgba(0, 0, 0, 0.267);
+}
+ul li .navbar {
+  position: absolute;
+}
+ul li:hover {
+  display: inline;
+  color: #000;
+  background-color: rgba(0, 0, 0, 0.411);
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+@media only screen and (min-width: 350px) {
   ul li {
     display: inline-block;
     background-color: transparent;
     color: #000;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    text-transform: uppercase;
     transition: all 0.3s;
+    text-transform: capitalize;
   }
 }
 @media only screen and (min-width: 200px) {
@@ -76,15 +75,11 @@ ul li :hover {
     color: #000;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    text-transform: capitalize;
     transition: all 0.3s;
-  }
-
-  header {
-    height: 250px;
-    width: 100%;
+    text-transform: uppercase;
   }
 }
+
 /*fin-header*/
 /*galeria inicia*/
 .imgclass {
@@ -101,7 +96,7 @@ ul li :hover {
 }
 
 .item1 {
-  background-image: url(/img/mano\ raviolon.jpg);
+  background-image: url(/img/mano.raviolon.jpg);
   background-color: blue;
 }
 
@@ -126,7 +121,7 @@ ul li :hover {
 }
 
 .item6 {
-  background-image: url(/img/pan\ trenza.jpg);
+  background-image: url(/img/pan.trenza.jpg);
   background-color: yellow;
 }
 
@@ -136,7 +131,7 @@ ul li :hover {
 }
 
 .item8 {
-  background-image: url(/img/raviolplancha..jpg);
+  background-image: url(/img/raviolplancha.jpg);
   background-color: brown;
 }
 
@@ -293,7 +288,7 @@ ul li :hover {
 }
 
 .all {
-  background: radial-gradient(wheat, #8C7B65, #734002);
+  background: radial-gradient(wheat, #8c7b65, #734002);
 }
 
 .form {
@@ -460,7 +455,7 @@ footer {
 .precio-col {
   display: inline-flex;
   flex-direction: column;
-  background: radial-gradient(wheat, #8C7B65, #734002);
+  background: radial-gradient(wheat, #8c7b65, #734002);
   margin: 30px 20px 10px 16px;
   border-radius: 20px;
   box-shadow: 4px 4px 4px #f3f3f3;
