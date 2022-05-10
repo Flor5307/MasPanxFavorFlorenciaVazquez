@@ -1,178 +1,225 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sitio FLor</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Quicksand:wght@300;400&family=Shadows+Into+Light&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/estilos.css">
-</head>
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Quicksand:wght@300;400&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div>
-            <h2 class="first">Chef</h2>
-            <h1 class="second">Flor Vazquez</h1>
-        </div>
-        <!--inicia navbar-->
-        <nav class="navbar navbar-expand-md bg-gradient-light navbar-dark">
-            <!-- Brand
+      <div>
+        <h2 class="first">Chef</h2>
+        <h1 class="second">Flor Vazquez</h1>
+      </div>
+      <!--inicia navbar-->
+      <nav class="navbar navbar-expand-md bg-gradient-light navbar-dark">
+        <!-- Brand
                 <a class="navbar-brand" href="#">Menu:</a> -->
-            <!-- Toggler/collapsibe Button -->
-            <button class="navbar-toggler dropup" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon bg-dark"></span>
-            </button>
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="home.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="index.html">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="imagen.html">Galeria</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="precios.html">Compras</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="recetas.html">El producto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <!--termina navbar-->
+        <!-- Toggler/collapsibe Button -->
+        <button
+          class="navbar-toggler dropup"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon bg-dark"></span>
+        </button>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="index.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="imagen.html">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="precios.html">Compras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="recetas.html">El producto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!--termina navbar-->
     </header>
     <div class="all">
-        <div class="formulario">
-            <h2 class="form"><strong>Pongase en contacto con el Chef</strong></h2>
-            <div class="container">
-                <form>
-                    <ul class="flex-outer">
-                        <li>
-                            <label for="nombre">Nombre</label>
-                            <input type="text" id="nombre" placeholder="Escribe tu nombre aca">
-                        </li>
-                        <li>
-                            <label for="apellido">Apellido</label>
-                            <input type="text" id="apellido" placeholder="Escribe tu apellido aca">
-                        </li>
-                        <li>
-                            <label for="email">Email</label>
-                            <input type="email" id="email" placeholder="Escribe tu email aca">
-                        </li>
-                        <li>
-                            <label for="tel">Telefono</label>
-                            <input type="tel" id="tel" placeholder="Escribe tu telefono aca">
-                        </li>
-                        <li>
-                            <label for="comentarios">Asunto</label>
-                            <textarea rows="6" id="comentarios" placeholder="Escribe tu Asunto"></textarea>
-                        </li>
-                    </ul>
-                </form>
-            </div>
+      <div class="formulario">
+        <h2 class="form"><strong>Pongase en contacto con el Chef</strong></h2>
+        <div class="container">
+          <form>
+            <ul class="flex-outer">
+              <li>
+                <label for="nombre">Nombre</label>
+                <input
+                  type="text"
+                  id="nombre"
+                  placeholder="Escribe tu nombre aca"
+                />
+              </li>
+              <li>
+                <label for="apellido">Apellido</label>
+                <input
+                  type="text"
+                  id="apellido"
+                  placeholder="Escribe tu apellido aca"
+                />
+              </li>
+              <li>
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Escribe tu email aca"
+                />
+              </li>
+              <li>
+                <label for="tel">Telefono</label>
+                <input
+                  type="tel"
+                  id="tel"
+                  placeholder="Escribe tu telefono aca"
+                />
+              </li>
+              <li>
+                <label for="comentarios">Asunto</label>
+                <textarea
+                  rows="6"
+                  id="comentarios"
+                  placeholder="Escribe tu Asunto"
+                ></textarea>
+              </li>
+            </ul>
+          </form>
         </div>
-        <div class="radio">
-            <div class="gustos">
-                <li class="list-group-item">¿Que tipo de comensal sos?</li>
-                <div class="sub_gustos">
-                    <img class="icon" src="/img/icons/pasta1.png" alt="">
-                    <input type="radio">
-                    <label for="">Vegano</label>
-                </div>
-                <div class="sub_gustos">
-                    <img class="icon" src="/img/icons/pasta2.png" alt="">
-                    <input type="radio">
-                    <label for="">Vegetariano</label>
-                </div>
-                <div class="sub_gustos">
-                    <img class="icon" src="/img/icons/pasta3.png" alt="">
-                    <input type="radio">
-                    <label for="">Como de todo</label>
-                </div>
-                <div class="sub_gustos">
-                    <img class="icon" src="/img/icons/gluten1.png" alt="">
-                    <input type="radio">
-                    <label for="">Sin tacc</label>
-                </div>
-            </div>
-            <div class="compras">
-                <li class="list-group-item">¿Que deseas comprar?</li>
-                <div class="sub-compras">
-                    <img class="icon" src="/img/icons/pan1.png" alt="">
-                    <label><input type="checkbox" />Pan</label>
-                </div>
-                <div class="sub-compras">
-                    <img class="icon" src="/img/icons/spaguetti3.png" alt="">
-                    <label><input type="checkbox" />Pastas</label>
-                </div>
-                <div class="sub-compras">
-                    <img class="icon" src="/img/icons/salsa.png" alt="">
-                    <label><input type="checkbox" />Salsas</label>
-                </div>
-            </div>
+      </div>
+      <div class="radio">
+        <div class="gustos">
+          <li class="list-group-item">¿Que tipo de comensal sos?</li>
+          <div class="sub_gustos">
+            <img class="icon" src="/img/icons/pasta1.png" alt="" />
+            <input type="radio" />
+            <label for="">Vegano</label>
+          </div>
+          <div class="sub_gustos">
+            <img class="icon" src="/img/icons/pasta2.png" alt="" />
+            <input type="radio" />
+            <label for="">Vegetariano</label>
+          </div>
+          <div class="sub_gustos">
+            <img class="icon" src="/img/icons/pasta3.png" alt="" />
+            <input type="radio" />
+            <label for="">Como de todo</label>
+          </div>
+          <div class="sub_gustos">
+            <img class="icon" src="/img/icons/gluten1.png" alt="" />
+            <input type="radio" />
+            <label for="">Sin tacc</label>
+          </div>
         </div>
-        <div class="pedir">
-            <button type="button" class="btn btn-secondary">Enviar info</button>
+        <div class="compras">
+          <li class="list-group-item">¿Que deseas comprar?</li>
+          <div class="sub-compras">
+            <img class="icon" src="/img/icons/pan1.png" alt="" />
+            <label><input type="checkbox" />Pan</label>
+          </div>
+          <div class="sub-compras">
+            <img class="icon" src="/img/icons/spaguetti3.png" alt="" />
+            <label><input type="checkbox" />Pastas</label>
+          </div>
+          <div class="sub-compras">
+            <img class="icon" src="/img/icons/salsa.png" alt="" />
+            <label><input type="checkbox" />Salsas</label>
+          </div>
         </div>
+      </div>
+      <div class="pedir">
+        <button type="button" class="btn btn-secondary">Enviar info</button>
+      </div>
     </div>
     <footer id="footer">
-        <div class="footer-content">
-            <div>
-                <h4>Mas pan x favor</h4>
-                <p>Mas pan por favor hace todos sus productos a mano.
-                    Todos los productos son organicos y de confiar
-                </p>
-            </div>
-            <ul class="foot_contactos">
-                <li>
-                    <img src="/img/icons/icons8-instagram-24.png" alt="instagram">
-                    <a href="https://www.instagram.com/maspanxfavor/">Instagram</a>
-                </li>
-                <li>
-                    <img src="/img/icons/facebook.png" alt="facebook">
-                    <a href="https://www.facebook.com/florencia.vazquez.75641">Facebook</a>
-                </li>
-                <li>
-                    <img src="/img/icons/whatsapp.png" alt="whatsapp">
-                    <a href="">+54 111234567</a>
-                </li>
-            </ul>
-            <div class="footer-bottom">
-                <p>2016 &copy; Florpastas</p>
-            </div>
-            <div>
-                <ul class="pagination ">
-                    <li class="page-item"><a class="page-link" href="home.html">Home</a></li>
-                    <li class="page-item"><a class="page-link" href="index.html">Blog</a></li>
-                    <li class="page-item"><a class="page-link" href="imagen.html">Galeria</a></li>
-                    <li class="page-item"><a class="page-link" href="precios.html">Compras online</a></li>
-                    <li class="page-item"><a class="page-link" href="recetas.html">Producto</a></li>
-                    <li class="page-item"><a class="page-link" href="contacto.html">Contacto</a></li>
-                </ul>
-            </div>
+      <div class="footer-content">
+        <div>
+          <h4>Mas pan x favor</h4>
+          <p>
+            Mas pan por favor hace todos sus productos a mano. Todos los
+            productos son organicos y de confiar
+          </p>
         </div>
+        <ul class="foot_contactos">
+          <li>
+            <img src="/img/icons/icons8-instagram-24.png" alt="instagram" />
+            <a href="https://www.instagram.com/maspanxfavor/">Instagram</a>
+          </li>
+          <li>
+            <img src="/img/icons/facebook.png" alt="facebook" />
+            <a href="https://www.facebook.com/florencia.vazquez.75641"
+              >Facebook</a
+            >
+          </li>
+          <li>
+            <img src="/img/icons/whatsapp.png" alt="whatsapp" />
+            <a href="">+54 111234567</a>
+          </li>
+        </ul>
+        <div class="footer-bottom">
+          <p>2016 &copy; Florpastas</p>
+        </div>
+        <div>
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="home.html">Home</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="index.html">Blog</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="imagen.html">Galeria</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="precios.html">Compras online</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="recetas.html">Producto</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
-        crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

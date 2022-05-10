@@ -7,6 +7,8 @@ $primary-6: #000;
 $primary-7: wheat;
 $primary-8: #f3f3f3;
 
+$gradient-1: $primary-7, $primary-4, $primary-3;
+
 $shadow-1: 2px 2px 4px $primary-6;
 
 $font-1: "Quicksand", sans-serif;
@@ -16,7 +18,7 @@ $font-3: Arial, Helvetica, sans-serif;
 body {
   display: grid;
   margin-top: -48px;
-  background: radial-gradient($primary-7, $primary-4, $primary-3);
+  background: radial-gradient($gradient-1);
   grid-template-rows: 250px auto 100px;
   grid-template-columns: auto;
 }
@@ -52,4 +54,4 @@ body {
 }
 /*fin-home*/
 
-@import "_compras", "_header", "_footer", "_contacto", "_galeria"
+@import "_compras", "_header", "_footer", "_contacto", "_galeria";
