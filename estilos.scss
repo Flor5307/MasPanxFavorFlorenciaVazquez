@@ -1,15 +1,21 @@
-/*paleta de colores primarios*/
 $primary-1: #7C8C03;
 $primary-2: #6F7302;
 $primary-3: #734002;
 $primary-4: #8C7B65;
 $primary-5: #CF4503;
+$primary-6: #000;
+$primary-7: wheat;
+$primary-8: #f3f3f3;
+
+$font-1: 'Quicksand', sans-serif;
+$font-2: 'Shadows Into Light';
+$font-3: Arial, Helvetica, sans-serif;
 
 
 body {
     display: grid;
     margin-top: -48px;
-    background: radial-gradient(wheat, $primary-4, $primary-3);
+    background: radial-gradient($primary-7 , $primary-4, $primary-3);
     grid-template-rows: 250px auto 100px;
     grid-template-columns: auto;
 }
@@ -25,19 +31,19 @@ header {
 
 .first {
     padding-top: 50px;
-    color: black;
+    color: $primary-6;
     text-align: center;
     font-size: 35px;
-    font-family: 'Quicksand', sans-serif;
-    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    font-family: $font-1;
+    text-shadow: 2px 2px 4px $primary-6;
 }
 
 h1 {
     font-size: 75px;
     text-align: center;
-    font-family: 'Shadows Into Light';
-    color: black;
-    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    font-family: $font-2;
+    color: $primary-6;
+    text-shadow: 2px 2px 4px $primary-6;
 }
 
 ul li {
@@ -51,9 +57,9 @@ ul li {
 
     & :hover {
         display: inline;
-        color: black;
+        color: $primary-6;
         background-color: rgba(0, 0, 0, 0.411);
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: $font-3;
         text-align: center;
         text-transform: uppercase;
         transition: all 0.3s;
@@ -73,8 +79,8 @@ ul li {
     ul li {
         display: inline-block;
         background-color: transparent;
-        color: black;
-        font-family: Arial, Helvetica, sans-serif;
+        color: $primary-6;
+        font-family: $font-3;
         text-align: center;
         text-transform: uppercase;
         transition: all 0.3s;
@@ -85,8 +91,8 @@ ul li {
     ul li {
         display: inline-block;
         background-color: transparent;
-        color: black;
-        font-family: Arial, Helvetica, sans-serif;
+        color: $primary-6;
+        font-family: $font-3;
         text-align: center;
         text-transform: capitalize;
         transition: all 0.3s;
@@ -109,14 +115,14 @@ ul li {
 }
 
 .img {
-    border: 4px solid black;
+    border: 4px solid $primary-6;
     background-size: cover;
     background-position: center;
 }
 
 .item1 {
     background-image: url(/img/mano\ raviolon.jpg);
-    background-color: #dd9933;
+    background-color: blue;
 }
 
 .item2 {
@@ -176,7 +182,7 @@ ul li {
     .item1 {
         grid-column: 1/2;
         grid-row: 1/4;
-        background-color: #dd9933;
+        background-color: blue;
     }
 
     .item2 {
@@ -253,7 +259,7 @@ ul li {
 .img-home {
     width: 500px;
     height: 1000px;
-    border: solid black 2px;
+    border: solid $primary-6 2px;
     background-color: red;
 }
 
@@ -315,7 +321,7 @@ ul li {
 }
 
 .all {
-    background: radial-gradient(wheat, $primary-4, $primary-3)
+    background: radial-gradient($primary-7, $primary-4, $primary-3)
 }
 
 .form {
@@ -346,7 +352,7 @@ ul li {
 .sub_gustos {
     display: flex;
     flex-direction: column;
-    border-radius: solid #000 2px;
+    border-radius: solid $primary-6 2px;
 }
 
 .compras :hover {
@@ -357,25 +363,25 @@ ul li {
 .sub-compras {
     display: flex;
     flex-direction: column;
-    border-radius: solid #000 2px;
+    border-radius: solid $primary-6 2px;
 }
 
 .pedir {
     display: flex;
     align-items: center;
     justify-content: center;
-}
 
-.pedir :hover {
-    background-color: rgba(0, 0, 0, 0.438);
-    color: rgb(0, 217, 255);
-    text-transform: uppercase;
+    :hover {
+        background-color: rgba(0, 0, 0, 0.438);
+        color: $primary-6;
+        text-transform: uppercase;
+    }
 }
 
 /* contacto-fin*/
 /* footer*/
 footer {
-    background-color: #000;
+    background-color: $primary-6;
     height: auto;
     width: auto;
 }
@@ -386,21 +392,21 @@ footer {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    background-color: #000;
-}
+    background-color: $primary-6;
 
-.footer-content h4 {
-    font-size: 30px;
-    color: wheat;
-    text-transform: capitalize;
-}
+    h4 {
+        font-size: 30px;
+        color: $primary-7;
+        text-transform: capitalize;
+    }
 
-.footer-content p {
-    max-width: 500px;
-    margin: 10px auto;
-    line-height: 28px;
-    font-size: 14px;
-    color: #cacdd2;
+    p {
+        max-width: 500px;
+        margin: 10px auto;
+        line-height: 28px;
+        font-size: 14px;
+        color: $primary-8;
+    }
 }
 
 .foot_contactos {
@@ -408,67 +414,62 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-}
 
-.foot_contactos li {
-    margin: 0 10px;
-    background-color: rgba(255, 255, 255, 0.212);
-    border-radius: 15px;
-}
-
-.foot_contactos a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    padding: 5px;
-}
-
-.foot_contactos a {
-    font-size: 1.1rem;
-    width: 20px;
-    transition: color .4s;
-}
-
-.footer-bottom {
-    color: #000;
-    width: auto;
-    padding: 20px;
-    text-align: center;
-}
-
-.footer-bottom p {
-    float: left;
-    font-size: 14px;
-    word-spacing: 10px;
-    text-transform: capitalize;
-}
-
-.footer-bottom p {
-    font-size: 16px;
-    text-decoration: none;
-}
-
-.footer-menu {
-    float: right;
-}
-
-.footer-menu ul li {
-    padding-right: 10px;
-    text-decoration: none;
-}
-
-@media (max-width:500px) {
-    .footer-menu ul {
-        display: flex;
-        text-decoration: none;
-        margin-top: 10px;
-        margin-bottom: 20px;
+    li {
+        margin: 0 10px;
+        background-color: rgba(255, 255, 255, 0.212);
         border-radius: 15px;
-        color: wheat;
+    }
+        
+    a {
+        text-decoration: none;
+        color: $primary-6;
+        padding: 5px;
+        font-size: 1.1rem;
+        width: 20px;
+        transition: color .4s;
     }
 }
 
+.footer-bottom {
+    color: $primary-6;
+    width: auto;
+    padding: 20px;
+    text-align: center;
+
+    p {
+        float: left;
+        font-size: 14px;
+        word-spacing: 10px;
+        text-transform: capitalize;
+        text-decoration: none;
+    }
+}
+
+
+.footer-menu {
+    float: right;
+    
+    ul li {
+        padding-right: 10px;
+        text-decoration: none;
+    }
+    
+    @media (max-width:500px) {
+        ul li {
+            display: flex;
+            text-decoration: none;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            color: $primary-7;
+        }
+    }
+}
+
+
 .page-link {
-    color: wheat;
+    color: $primary-7;
     background-color: transparent;
 }
 
@@ -481,19 +482,34 @@ footer {
     flex-direction: row;
     grid-row: 2/3;
     text-align: center;
+    
+    :nth-child(1) .precio-col {
+        flex: 1;
+        background-color: red;
+    }
+    
+    :nth-child(2) .precio-col {
+        flex: 1;
+        background-color: rgba(62, 62, 65, 0.548);
+    }
+    
+    :nth-child(3) .precio-col {
+        flex: 1;
+        background-color: green;
+    }
 }
 
 .precio-col {
     display: inline-flex;
     flex-direction: column;
-    background: radial-gradient(wheat, $primary-4, $primary-3);
+    background: radial-gradient($primary-7, $primary-4, $primary-3);
     margin: 30px 20px 10px 16px;
     border-radius: 20px;
-    box-shadow: 4px 4px 4px #ddd
+    box-shadow: 4px 4px 4px $primary-8;
 }
 
 .precio-col-features :hover {
-    color: wheat;
+    color: $primary-7;
     transition: 0, 3s;
     text-transform: uppercase;
 
@@ -505,21 +521,6 @@ footer {
         justify-content: center;
         margin: 30px 20px 10px 16px;
     }
-}
-
-#tabla__precios:nth-child(1) .precio-col {
-    flex: 1;
-    background-color: red;
-}
-
-#tabla__precios:nth-child(2) .precio-col {
-    flex: 1;
-    background-color: rgba(62, 62, 65, 0.548);
-}
-
-#tabla__precios:nth-child(3) .precio-col {
-    flex: 1;
-    background-color: green;
 }
 
 .precio-titulo {
@@ -541,42 +542,44 @@ footer {
     padding: 20px;
     flex: 20%;
     align-items: baseline;
+    
+    h3 {
+        color: $primary-8;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+    
+    p {
+        text-align: center;
+        color: $primary-8;
+        font-size: 14px;
+        margin-bottom: 0;
+    }
 }
-
-.precio-col-header h3 {
-    color: #f3f3f3;
-    text-align: center;
-    font-size: 30px;
-    font-weight: 600;
-    margin-bottom: 0;
-}
-
-.precio-col-header p {
-    text-align: center;
-    color: #f3f3f3;
-    font-size: 14px;
-    margin-bottom: 0;
-}
-
+    
 /*Características*/
 .precio-col-features {
-    padding: 0 20px 20px 20px
-}
+    padding: 0 20px 20px 20px;
+    
+    p {
+        padding: 20px;
+        margin: 0;
+        text-align: center;
+        border-top: 1px solid $primary-8;
+            
+        :first-child,
+        :last-child {
+            border-bottom: none;
+        }
+    }
 
-.precio-col-features p {
-    padding: 20px;
-    margin: 0;
-    text-align: center;
-    border-top: 1px solid #ddd
 }
-
-.precio-col-features p:first-child,
-.precio-col-features p:last-child {
-    border-bottom: none
-}
+    
 
 /*Comprar*/
-.precio-col-comprar {
+div.precio-col-comprar {
     padding: 10px;
     min-width: 250px;
     align-self: flex-end;
@@ -585,23 +588,23 @@ footer {
     margin: 0 auto 20px;
     border-radius: 10px;
     border: 2px solid $primary-3;
-    transition: all 0.3s
-}
-
-.precio-col-comprar a {
-    color: #f3f3f3;
-    padding: 10px;
-    font-size: 20px;
-    text-transform: uppercase;
-    transition: all 0.3s
-}
-
-.precio-col-comprar:hover {
-    background-color: #f3f3f3;
     transition: all 0.3s;
-}
 
-.precio-col-comprar:hover a {
-    color: #dd9933;
-    transition: all 0.3s
+        a {
+            color: #f3f3f3;
+            padding: 10px;
+            font-size: 20px;
+            text-transform: uppercase;
+            transition: all 0.3s;
+        }
+
+    :hover {
+        background-color: #f3f3f3;
+        transition: all 0.3s;
+
+        a {
+            color: #dd9933;
+            transition: all 0.3s;
+        }
+    }
 }
