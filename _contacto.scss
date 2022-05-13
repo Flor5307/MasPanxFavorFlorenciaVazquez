@@ -73,32 +73,6 @@
   display: flex;
 }
 
-.gustos :hover {
-  text-transform: uppercase;
-  border-radius: 2px;
-}
-
-.list-group-item {
-  background-color: $primary-3;
-}
-
-.sub_gustos {
-  display: flex;
-  flex-direction: column;
-  border-radius: solid $primary-6 2px;
-}
-
-.compras :hover {
-  text-transform: uppercase;
-  border-radius: 2px;
-}
-
-.sub-compras {
-  display: flex;
-  flex-direction: column;
-  border-radius: solid $primary-6 2px;
-}
-
 .pedir {
   display: flex;
   align-items: center;
@@ -110,4 +84,5 @@
     text-transform: uppercase;
   }
 }
+
 /* contacto-fin*/

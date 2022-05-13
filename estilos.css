@@ -392,32 +392,6 @@ footer {
   display: flex;
 }
 
-.gustos :hover {
-  text-transform: uppercase;
-  border-radius: 2px;
-}
-
-.list-group-item {
-  background-color: #734002;
-}
-
-.sub_gustos {
-  display: flex;
-  flex-direction: column;
-  border-radius: solid #000 2px;
-}
-
-.compras :hover {
-  text-transform: uppercase;
-  border-radius: 2px;
-}
-
-.sub-compras {
-  display: flex;
-  flex-direction: column;
-  border-radius: solid #000 2px;
-}
-
 .pedir {
   display: flex;
   align-items: center;
