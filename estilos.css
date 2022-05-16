@@ -38,6 +38,32 @@ body {
 }
 
 /*fin-home*/
+.para {
+  height: 200px;
+  background-color: yellow;
+  border: 2px solid black;
+}
+
+.casitodos-1 {
+  width: 4em;
+  background-color: #6f7302;
+}
+
+.casitodos-2 {
+  width: 8em;
+  background-color: #6f7302;
+}
+
+.casitodos-3 {
+  width: 12em;
+  background-color: #6f7302;
+}
+
+.casitodos-4 {
+  width: 16em;
+  background-color: #6f7302;
+}
+
 /*Precios*/
 #tabla__precios {
   display: flex;
@@ -470,7 +496,7 @@ footer {
 }
 
 .item8 {
-  background-image: url(/img/raviolplancha.jpg);
+  background-image: url(/img/raviolplancha..jpg);
   background-color: brown;
 }
 
