@@ -27,9 +27,7 @@ body {
   width: 100%;
   height: auto;
 }
-
 /*index fin*/
-
 .card-img-top {
   height: 400px;
   width: 198px;
@@ -44,7 +42,6 @@ body {
   width: 500px;
   height: 1000px;
   border: solid $primary-6 2px;
-  background-color: red;
 }
 /*fin-home*/
 @import "_compras", "_header", "_footer", "_contacto";

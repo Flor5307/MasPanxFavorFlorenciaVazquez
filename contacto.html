@@ -57,175 +57,230 @@
     <!--termina navbar-->
   </header>
   <div class="all">
-    <div class="formulario">
-      <h2 class="form"><strong>Pongase en contacto con el Chef</strong></h2>
-      <div class="container">
-        <form>
-          <ul class="flex-outer">
-            <li>
-              <label for="nombre">Nombre</label>
-              <input type="text" id="nombre" placeholder="Escribe tu nombre aca" />
-            </li>
-            <li>
-              <label for="apellido">Apellido</label>
-              <input type="text" id="apellido" placeholder="Escribe tu apellido aca" />
-            </li>
-            <li>
-              <label for="email">Email</label>
-              <input type="email" id="email" placeholder="Escribe tu email aca" />
-            </li>
-            <li>
-              <label for="tel">Telefono</label>
-              <input type="tel" id="tel" placeholder="Escribe tu telefono aca" />
-            </li>
-            <li>
-              <label for="comentarios">Asunto</label>
-              <textarea rows="6" id="comentarios" placeholder="Escribe tu Asunto"></textarea>
-            </li>
-          </ul>
-        </form>
+    <h3 class="font-weight-bold text-center">Pongase en contacto con el Chef</h3>
+    <div class="container-fluid">
+      <form class="row">
+        <div class="col-12 text-center ">
+          <label class="col-1" for="nombre">Nombre</label>
+          <input class="col-3" type="text" id="nombre" placeholder="Escribe tu nombre aca" />
+        </div>
+        <div class="col-12 text-center ">
+          <label class="col-1" for="apellido">Apellido</label>
+          <input class="col-3" type="text" id="apellido" placeholder="Escribe tu apellido aca" />
+        </div>
+        <div class="col-12 text-center ">
+          <label class="col-1" for="email">Email</label>
+          <input class="col-3" type="email" id="email" placeholder="Escribe tu email aca" />
+        </div>
+        <div class="col-12 text-center ">
+          <label class="col-1" for="tel">Telefono</label>
+          <input class="col-3" type="tel" id="tel" placeholder="Escribe tu telefono aca" />
+        </div>
+        <div class="col-12 d-flex align-items-center justify-content-center">
+          <label class="col-1 p-4" for="comentarios">Asunto</label>
+          <textarea class="col-3" rows="6" id="comentarios" placeholder="Escribe tu Asunto"></textarea>
+        </div>
+      </form>
+    </div>
+    <div class="container mt-4">
+      <h3 class="font-weight-bold text-center">¿Que tipo de comensal sos?</h3>
+
+      <div class="btn-group d-flex justify-content-center" role="group" aria-label="Basic radio toggle button group">
+        <div class="p-4">
+          <img class="pl-2" src="img/icons/pasta1.png" for="comensal_1" alt="pasta-con-verduras" />
+          <div class="row-cols-2">
+            <input type="radio" class="form-check-input" name="btnradio" id="comensal_1" autocomplete="off" checked>
+            <label for="comensal_1">Vegano</label>
+          </div>
+        </div>
+
+        <div class="p-4">
+          <img class="pl-4" src="img/icons/pasta3.png" for="comensal_2" alt="pasta-con-verduras" />
+          <div class="row-cols-2">
+            <input type="radio" class="form-check-input" name="btnradio" id="comensal_2" autocomplete="off">
+            <label for="comensal_2">Vegetariano</label>
+          </div>
+        </div>
+        <div class="p-4">
+          <img class="pl-2" src="img/icons/gluten1.png" for="comensal_3" alt="pasta-con-verduras" />
+          <div class="row-cols-2">
+            <input type="radio" class="form-check-input" name="btnradio" id="comensal_3" autocomplete="off">
+            <label for="comensal_3">Celiaco</label>
+          </div>
+        </div>
+        <div class="p-4">
+          <img class="pl-4" src="img/icons/pasta2.png" for="comensal_4" alt="pasta-con-verduras" />
+          <div class="row-cols-2">
+            <input type="radio" class="form-check-input" name="btnradio" id="comensal_4" autocomplete="off">
+            <label class="text-nowrap" for="comensal_4">Como de todo</label>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="container col-6">
-      <h2><strong> Para comprar, por favor, ingrese sus datos:</strong></h2>
-      <div class="input-group mb-3">
-        <div class="input-group-prepend">
-          <label class="input-group-text" for="inputGroupSelect01">Pastas</label>
+    <div class="container mt-4">
+      <h3 class="font-weight-bold text-center">Para comprar, por favor, ingrese sus datos:</h3>
+      <div class="row">
+        <div class="input-group m-3 col-lg-12">
+          <div class="input-group-prepend col-2 ms-3 me-2">
+            <label class="input-group-text" for="inputGroupSelect01">Pastas</label>
+          </div>
+          <select class="custom-select col-3 me-4" id="inputGroupSelect01">
+            <option value="0">Hoy pastas no llevo</option>
+            <option value="1">Ñoquis rellenos</option>
+            <option value="2">Ñoquis</option>
+            <option value="3">Fideos verdes, violetas o al huevo</option>
+            <option value="4">Capellettis comunes</option>
+            <option value="5">Capellettis especiales</option>
+          </select>
+          <div class="input-group-append col-2 me-2">
+            <label class="input-group-text" for="inputGroupSelect02">Cantidad</label>
+          </div>
+          <select class="custom-select col-3" id="inputGroupSelect02">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
         </div>
-        <select class="custom-select" id="inputGroupSelect01">
-          <option value="0">Hoy pastas no llevo</option>
-          <option value="1">Ñoquis rellenos</option>
-          <option value="2">Ñoquis</option>
-          <option value="3">Fideos verdes, violetas o al huevo</option>
-          <option value="4">Capellettis comunes</option>
-          <option value="5">Capellettis especiales</option>
-        </select>
-        <div class="input-group-append">
-          <label class="input-group-text" for="inputGroupSelect02">Cantidad</label>
+        <div class="input-group m-3 col-lg-12">
+          <div class="input-group-prepend col-2 ms-3 me-2">
+            <label class="input-group-text" for="inputGroupSelect01">Panes</label>
+          </div>
+          <select class="custom-select col-3 me-4" id="inputGroupSelect01">
+            <option value="0">Hoy panes no llevo</option>
+            <option value="1">De centeno</option>
+            <option value="2">Blanco</option>
+            <option value="3">Rellenos</option>
+            <option value="4">Multicereal</option>
+            <option value="5">Blanco con nueces</option>
+          </select>
+          <div class="input-group-append col-2 me-2">
+            <label class="input-group-text" for="inputGroupSelect02">Cantidad</label>
+          </div>
+          <select class="custom-select col-3" id="inputGroupSelect02">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
         </div>
-        <select class="custom-select" id="inputGroupSelect02">
-          <option value="0">0</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-        </select>
+        <div class="input-group m-3 col-lg-12">
+          <div class="input-group-prepend col-2 ms-3 me-2">
+            <label class="input-group-text" for="inputGroupSelect01">Salsas</label>
+          </div>
+          <select class="custom-select col-3 me-4" id="inputGroupSelect01">
+            <option value="0">Hoy salsas no llevo</option>
+            <option value="1">Bolognesa</option>
+            <option value="2">Crema de champignones</option>
+            <option value="3">Crema de limon</option>
+            <option value="4">Napolitana</option>
+            <option value="5">Tomate, aceituna y ajo</option>
+          </select>
+          <div class="input-group-append col-2 me-2">
+            <label class="input-group-text" for="inputGroupSelect02">Cantidad</label>
+          </div>
+          <select class="custom-select col-3" id="inputGroupSelect02">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </div>
       </div>
-      <div class="input-group mb-3">
-        <div class="input-group-prepend">
-          <label class="input-group-text" for="inputGroupSelect01">Panes</label>
-        </div>
-        <select class="custom-select" id="inputGroupSelect01">
-          <option value="0">Hoy panes no llevo</option>
-          <option value="1">De centeno</option>
-          <option value="2">Blanco</option>
-          <option value="3">Rellenos</option>
-          <option value="4">Multicereal</option>
-          <option value="5">Blanco con nueces</option>
-        </select>
-        <div class="input-group-append">
-          <label class="input-group-text" for="inputGroupSelect02">Cantidad</label>
-        </div>
-        <select class="custom-select" id="inputGroupSelect02">
-          <option value="0">0</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-        </select>
-      </div>
-      <div class="input-group mb-3">
-        <div class="input-group-prepend">
-          <label class="input-group-text" for="inputGroupSelect01">Salsas</label>
-        </div>
-        <select class="custom-select" id="inputGroupSelect01">
-          <option value="0">Hoy salsas no llevo</option>
-          <option value="1">Bolognesa</option>
-          <option value="2">Crema de champignones</option>
-          <option value="3">Crema de limon</option>
-          <option value="4">Napolitana</option>
-          <option value="5">Tomate, aceituna y ajo</option>
-        </select>
-        <div class="input-group-append">
-          <label class="input-group-text" for="inputGroupSelect02">Cantidad</label>
-        </div>
-        <select class="custom-select" id="inputGroupSelect02">
-          <option value="0">0</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-        </select>
-      </div>
-      <button type="button" class="btn btn-outline-dark">Comprar</button>
     </div>
-    <div class="container col-6">
-      <h2><strong>¿Como queres pagar?</strong></h2>
+
+    <div class="container mt-4">
+      <h3 class="font-weight-bold text-center">¿Como queres pagar?</h3>
       <form>
-        <div class="form-row align-items-center">
-          <div class="col-auto my-1">
-            <div class="form-group" id="credit_cards">
-              <img src="img/icons/mastercard.png" id="mastercard">
-              <img src="img/icons/mercadopago.png" id="mercadopago">
-              <img src="img/icons/efectivo.png" id="efectivo">
-              <img src="img/icons/credito.png" id="credito-visa">
+        <div class="btn-group d-flex justify-content-center" role="group" aria-label="Basic radio toggle button group">
+          <div class="p-2">
+            <img class="pl-2" src="img/icons/mastercard.png" for="pago_1" alt="pasta-con-verduras" />
+            <div class="row-cols-2">
+              <input type="radio" class="form-check-input" name="btnradio" id="pago_1" autocomplete="off" checked>
+              <label for="pago_1">Debito</label>
             </div>
-            <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-              <option value="0">Efectivo(retiro en el local)</option>
-              <option value="1">Mercado Pago</option>
-              <option value="2">Credito</option>
-              <option value="3">Debito</option>
-            </select>
-            <div class="creditCardForm">
-              <div class="payment">
-                <form>
-                  <div class="form-group owner">
-                    <label for="owner">Nombres y apellidos(como figura en la tarjeta)</label>
-                    <input type="text" class="form-control" id="owner">
-                  </div>
-                  <div class="form-group CVV">
-                    <label for="cvv">Codigo de seguridad</label>
-                    <input type="text" class="form-control" id="cvv">
-                  </div>
-                  <div class="form-group" id="card-number-field">
-                    <label for="cardNumber">Numero de tarjeta</label>
-                    <input type="text" class="form-control" id="cardNumber">
-                  </div>
-                  <div class="form-group" id="expiration-date">
-                    <label>Fecha de expiracion</label>
-                    <select>
-                      <option value="01">January</option>
-                      <option value="02">February </option>
-                      <option value="03">March</option>
-                      <option value="04">April</option>
-                      <option value="05">May</option>
-                      <option value="06">June</option>
-                      <option value="07">July</option>
-                      <option value="08">August</option>
-                      <option value="09">September</option>
-                      <option value="10">October</option>
-                      <option value="11">November</option>
-                      <option value="12">December</option>
-                    </select>
-                    <select>
-                      <option value="16"> 2016</option>
-                      <option value="17"> 2017</option>
-                      <option value="18"> 2018</option>
-                      <option value="19"> 2019</option>
-                      <option value="20"> 2020</option>
-                      <option value="21"> 2021</option>
-                    </select>
-                  </div>
-                  <div class="form-group" id="pay-now">
-                    <button type="submit" class="btn btn-default" id="confirm-purchase">Confirm</button>
-                  </div>
-                </form>
-              </div>
+          </div>
+
+          <div class="p-2">
+            <img class="pl-3" src="img/icons/mercadopago.png" for="pago_2" alt="pasta-con-verduras" />
+            <div class="row-cols-2">
+              <input type="radio" class="form-check-input" name="btnradio" id="pago_2" autocomplete="off">
+              <label class="text-nowrap" for="pago_2">Mercado Pago</label>
+            </div>
+          </div>
+
+          <div class="p-2">
+            <img class="pl-5" src="img/icons/efectivo.png" for="pago_3" alt="pasta-con-verduras" />
+            <div class="row-cols-2">
+              <input type="radio" class="form-check-input" name="btnradio" id="pago_3" autocomplete="off">
+              <label class="text-nowrap" for="pago_3">Efectivo(retiro en el local)</label>
+            </div>
+          </div>
+
+          <div class="p-2">
+            <img class="pl-0" src="img/icons/visa.png" for="pago_4" alt="pasta-con-verduras" />
+            <div class="row-cols-2">
+              <input type="radio" class="form-check-input" name="btnradio" id="pago_4" autocomplete="off">
+              <label class="text-nowrap" for="pago_4">Credito</label>
             </div>
           </div>
         </div>
-      </form>
+
+
+
+        <div class="creditCardForm">
+          <div class="payment">
+            <form>
+              <div class="form-group owner">
+                <label for="owner">Nombres y apellidos(como figura en la tarjeta)</label>
+                <input type="text" class="form-control" id="owner">
+              </div>
+              <div class="form-group CVV">
+                <label for="cvv">Codigo de seguridad</label>
+                <input type="text" class="form-control" id="cvv">
+              </div>
+              <div class="form-group" id="card-number-field">
+                <label for="cardNumber">Numero de tarjeta</label>
+                <input type="text" class="form-control" id="cardNumber">
+              </div>
+              <div class="form-group" id="expiration-date">
+                <label>Fecha de expiracion</label>
+                <select>
+                  <option value="01">Enero</option>
+                  <option value="02">Febrero</option>
+                  <option value="03">Marzo</option>
+                  <option value="04">Abril</option>
+                  <option value="05">Mayo</option>
+                  <option value="06">Junio</option>
+                  <option value="07">Julio</option>
+                  <option value="08">Agosto</option>
+                  <option value="09">Septiembre</option>
+                  <option value="10">Octubre</option>
+                  <option value="11">Noviembre</option>
+                  <option value="12">Diciembre</option>
+                </select>
+                <select>
+                  <option value="16"> 2016</option>
+                  <option value="17"> 2017</option>
+                  <option value="18"> 2018</option>
+                  <option value="19"> 2019</option>
+                  <option value="20"> 2020</option>
+                  <option value="21"> 2021</option>
+                </select>
+              </div>
+              <div class="form-group text-center" id="pay-now">
+                <button type="submit" class="btn btn-outline-dark" id="confirm-datos">Hacer la compra</button>
+              </div>
+            </form>
+          </div>
+        </div>
+    </div>
+    <div class="container mt-5 mb-5">
+      <div class="text-center">
+      </div>
     </div>
   </div>
   <footer id="footer">
