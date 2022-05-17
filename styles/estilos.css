@@ -54,8 +54,6 @@ body {
 }
 
 .precio-col {
-  display: inline-flex;
-  flex-direction: column;
   background: radial-gradient(wheat, #8c7b65, #734002);
   margin: 30px 20px 10px 16px;
   border-radius: 20px;
