@@ -199,28 +199,6 @@ ul li:hover {
   text-transform: uppercase;
   transition: all 0.3s;
 }
-@media only screen and (min-width: 350px) {
-  ul li {
-    display: inline-block;
-    background-color: transparent;
-    color: #000;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    transition: all 0.3s;
-    text-transform: capitalize;
-  }
-}
-@media only screen and (min-width: 200px) {
-  ul li {
-    display: inline-block;
-    background-color: transparent;
-    color: #000;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    transition: all 0.3s;
-    text-transform: uppercase;
-  }
-}
 
 /*fin-header*/
 /* footer*/

@@ -52,26 +52,7 @@ ul {
       text-transform: uppercase;
       transition: all 0.3s;
     }
-
-    @media only screen and (min-width: 350px) {
-      display: inline-block;
-      background-color: transparent;
-      color: $primary-6;
-      font-family: $font-3;
-      text-align: center;
-      transition: all 0.3s;
-      text-transform: capitalize;
-    }
-
-    @media only screen and (min-width: 200px) {
-      display: inline-block;
-      background-color: transparent;
-      color: $primary-6;
-      font-family: $font-3;
-      text-align: center;
-      transition: all 0.3s;
-      text-transform: uppercase;
-    }
   }
 }
+
 /*fin-header*/
