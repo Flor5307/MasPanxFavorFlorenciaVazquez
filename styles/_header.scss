@@ -8,20 +8,15 @@ header {
 }
 
 .first {
+  @include estetica;
   padding-top: 50px;
-  color: $primary-6;
-  text-align: center;
   font-size: 35px;
   font-family: $font-1;
-  text-shadow: $shadow-1;
 }
-
 h1 {
+  @include estetica;
   font-size: 75px;
-  text-align: center;
   font-family: $font-2;
-  color: $primary-6;
-  text-shadow: $shadow-1;
 }
 
 .navbar-toggler-icon {
@@ -45,7 +40,7 @@ ul {
 
     &:hover {
       display: inline;
-      color: $primary-6;
+      color: map-get($map:$colores, $key:primary-6);
       background-color: rgba(0, 0, 0, 0.411);
       font-family: $font-3;
       text-align: center;

@@ -1,0 +1,37 @@
+$gradient-1: map-get($map:$colores, $key:primary-7), map-get($map:$colores, $key:primary-4), map-get($map:$colores, $key:primary-3);
+
+$shadow-1: 2px 2px 4px map-get($map:$colores, $key:primary-6);
+
+$font-1: "Quicksand", sans-serif;
+$font-2: "Shadows Into Light";
+$font-3: Arial, Helvetica, sans-serif;
+
+body {
+  display: grid;
+  margin-top: -48px;
+  background: radial-gradient($gradient-1);
+  grid-template-rows: 250px auto 100px;
+  grid-template-columns: auto;
+}
+/* index */
+.image {
+  width: 100%;
+  height: auto;
+}
+/*index fin*/
+.card-img-top {
+  height: 400px;
+  width: 198px;
+}
+
+/*home*/
+.center {
+  text-align: center;
+}
+
+.img-home {
+  width: 500px;
+  height: 1000px;
+  border: solid map-get($map:$colores, $key:primary-6) 2px;
+}
+/*fin-home*/

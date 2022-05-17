@@ -93,17 +93,17 @@ body {
   align-items: baseline;
 }
 .precio-col-header h3 {
-  color: #f3f3f3;
   text-align: center;
+  margin-bottom: 0;
+  color: #f3f3f3;
   font-size: 30px;
   font-weight: 600;
-  margin-bottom: 0;
 }
 .precio-col-header p {
   text-align: center;
+  margin-bottom: 0;
   color: #f3f3f3;
   font-size: 14px;
-  margin-bottom: 0;
 }
 
 /*Características*/
@@ -159,20 +159,20 @@ header {
 }
 
 .first {
-  padding-top: 50px;
-  color: #000;
   text-align: center;
+  text-shadow: 2px 2px 4px #000;
+  color: #000;
+  padding-top: 50px;
   font-size: 35px;
   font-family: "Quicksand", sans-serif;
-  text-shadow: 2px 2px 4px #000;
 }
 
 h1 {
-  font-size: 75px;
   text-align: center;
-  font-family: "Shadows Into Light";
-  color: #000;
   text-shadow: 2px 2px 4px #000;
+  color: #000;
+  font-size: 75px;
+  font-family: "Shadows Into Light";
 }
 
 .navbar-toggler-icon {

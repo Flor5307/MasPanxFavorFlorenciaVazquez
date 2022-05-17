@@ -1,0 +1,9 @@
+@mixin alinear {
+  text-align: center;
+  margin-bottom: 0;
+}
+@mixin estetica {
+  text-align: center;
+  text-shadow: $shadow-1;
+  color: map-get($map: $colores, $key: primary-6);
+}

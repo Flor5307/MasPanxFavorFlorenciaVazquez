@@ -1,6 +1,6 @@
 /*contacto*/
 .all {
-  background: radial-gradient($primary-7, $primary-4, $primary-3);
+  background: radial-gradient($gradient-1);
 }
 
 .form {
@@ -26,7 +26,7 @@
 
   :hover {
     background-color: rgba(0, 0, 0, 0.438);
-    color: $primary-6;
+    color: map-get($map:$colores, $key:primary-6);
     text-transform: uppercase;
   }
 }

@@ -23,14 +23,14 @@
 }
 
 .precio-col {
-  background: radial-gradient($primary-7, $primary-4, $primary-3);
+  background: radial-gradient($gradient-1);
   margin: 30px 20px 10px 16px;
   border-radius: 20px;
-  box-shadow: 4px 4px 4px $primary-8;
+  box-shadow: 4px 4px 4px map-get($map:$colores, $key:primary-8);
 }
 
 .precio-col-features :hover {
-  color: $primary-7;
+  color: map-get($map:$colores, $key:primary-7);
   transition: 0, 3s;
   text-transform: uppercase;
 }
@@ -55,27 +55,24 @@
 .producto {
   align-self: center;
 }
-
 /*Headers*/
 .precio-col-header {
-  background-color: $primary-3;
+  background-color: map-get($map:$colores, $key:primary-3);
   padding: 20px;
   flex: 20%;
   align-items: baseline;
 
   h3 {
-    color: $primary-8;
-    text-align: center;
+    @include alinear;
+    color: map-get($map:$colores, $key:primary-8);
     font-size: 30px;
     font-weight: 600;
-    margin-bottom: 0;
   }
 
   p {
-    text-align: center;
-    color: $primary-8;
+    @include alinear;
+    color: map-get($map:$colores, $key:primary-8);
     font-size: 14px;
-    margin-bottom: 0;
   }
 }
 
@@ -87,7 +84,7 @@
     padding: 20px;
     margin: 0;
     text-align: center;
-    border-top: 1px solid $primary-8;
+    border-top: 1px solid map-get($map:$colores, $key:primary-8);
 
     :first-child,
     :last-child {
@@ -101,14 +98,14 @@ div.precio-col-comprar {
   min-width: 250px;
   align-self: flex-end;
   text-align: center;
-  background-color: $primary-3;
+  background-color: map-get($map:$colores, $key:primary-3);
   margin: 0 auto 20px;
   border-radius: 10px;
-  border: 2px solid $primary-3;
+  border: 2px solid map-get($map:$colores, $key:primary-3);
   transition: all 0.3s;
 
   a {
-    color: $primary-8;
+    color: map-get($map:$colores, $key:primary-8);
     padding: 10px;
     font-size: 20px;
     text-transform: uppercase;
@@ -116,7 +113,7 @@ div.precio-col-comprar {
   }
 
   :hover {
-    background-color: $primary-8;
+    background-color: map-get($map:$colores, $key:primary-8);
     transition: all 0.3s;
 
     a {
