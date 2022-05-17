@@ -53,19 +53,4 @@ body {
   background-color: red;
 }
 /*fin-home*/
-
-.para {
-  height: 200px;
-  background-color: yellow;
-  border: 2px solid black;
-}
-
-@for $in from 1 through 4 {
-
-  .casitodos-#{$in} {
-    width: 4em * $in;
-    background-color: #6f7302;
-  }
-  
-}
 @import "_compras", "_header", "_footer", "_contacto", "_galeria";
