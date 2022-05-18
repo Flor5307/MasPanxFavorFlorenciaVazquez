@@ -125,10 +125,10 @@ body {
 div.precio-col-comprar {
   padding: 10px;
   min-width: 250px;
+  margin: 0 auto 20px;
   align-self: flex-end;
   text-align: center;
   background-color: #734002;
-  margin: 0 auto 20px;
   border-radius: 10px;
   border: 2px solid #734002;
   transition: all 0.3s;
@@ -242,7 +242,7 @@ footer {
 }
 .foot_contactos a {
   text-decoration: none;
-  color: #000;
+  color: wheat;
   padding: 5px;
   font-size: 1.1rem;
   width: 20px;
