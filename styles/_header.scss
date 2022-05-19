@@ -21,30 +21,23 @@ h1 {
 
 .navbar-toggler-icon {
   position: absolute;
+  background-color: rgba(0, 0, 0, 0.411);
 }
 
 #collapsibleNavbar {
   z-index: 100;
-  background-color: rgba(146, 132, 121, 0.473);
 }
 
 ul {
   li {
-    .nav-item {
-      background-color: rgba(0, 0, 0, 0.267);
-    }
-
-    .navbar {
-      position: absolute;
-    }
 
     &:hover {
       display: inline;
       color: map-get($map:$colores, $key:primary-6);
       background-color: rgba(0, 0, 0, 0.411);
       font-family: $font-3;
+      font-size:smaller;
       text-align: center;
-      text-transform: uppercase;
       transition: all 0.3s;
     }
   }

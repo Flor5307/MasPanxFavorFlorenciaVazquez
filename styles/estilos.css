@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   display: grid;
   margin-top: -48px;
@@ -31,124 +30,6 @@ body {
 }
 
 /*fin-home*/
-/*Precios*/
-#tabla__precios {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  grid-row: 2/3;
-  text-align: center;
-}
-#tabla__precios :nth-child(1) .precio-col {
-  flex: 1;
-  background-color: red;
-}
-#tabla__precios :nth-child(2) .precio-col {
-  flex: 1;
-  background-color: rgba(62, 62, 65, 0.548);
-}
-#tabla__precios :nth-child(3) .precio-col {
-  flex: 1;
-  background-color: green;
-}
-
-.precio-col {
-  background: radial-gradient(wheat, #8c7b65, #734002);
-  margin: 30px 20px 10px 16px;
-  border-radius: 20px;
-  box-shadow: 4px 4px 4px #f3f3f3;
-}
-
-.precio-col-features :hover {
-  color: wheat;
-  transition: 0, 3s;
-  text-transform: uppercase;
-}
-
-@media only screen and (min-width: 768px) {
-  .precio-col {
-    float: left;
-    justify-content: center;
-    margin: 30px 20px 10px 16px;
-  }
-}
-.precio-titulo {
-  background-color: rgba(128, 128, 128, 0.61);
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  flex: 20%;
-  align-items: baseline;
-  max-height: 80px;
-}
-
-.producto {
-  align-self: center;
-}
-
-/*Headers*/
-.precio-col-header {
-  background-color: #734002;
-  padding: 20px;
-  flex: 20%;
-  align-items: baseline;
-}
-.precio-col-header h3 {
-  text-align: center;
-  margin-bottom: 0;
-  color: #f3f3f3;
-  font-size: 30px;
-  font-weight: 600;
-}
-.precio-col-header p {
-  text-align: center;
-  margin-bottom: 0;
-  color: #f3f3f3;
-  font-size: 14px;
-}
-
-/*Características*/
-.precio-col-features {
-  padding: 0 20px 20px 20px;
-}
-.precio-col-features p {
-  padding: 20px;
-  margin: 0;
-  text-align: center;
-  border-top: 1px solid #f3f3f3;
-}
-.precio-col-features p :first-child,
-.precio-col-features p :last-child {
-  border-bottom: none;
-}
-
-/*Comprar*/
-div.precio-col-comprar {
-  padding: 10px;
-  min-width: 250px;
-  margin: 0 auto 20px;
-  align-self: flex-end;
-  text-align: center;
-  background-color: #734002;
-  border-radius: 10px;
-  border: 2px solid #734002;
-  transition: all 0.3s;
-}
-div.precio-col-comprar a {
-  color: #f3f3f3;
-  padding: 10px;
-  font-size: 20px;
-  text-transform: uppercase;
-  transition: all 0.3s;
-}
-div.precio-col-comprar :hover {
-  background-color: #f3f3f3;
-  transition: all 0.3s;
-}
-div.precio-col-comprar :hover a {
-  color: #dd9933;
-  transition: all 0.3s;
-}
-
 /*header*/
 header {
   height: 250px;
@@ -177,26 +58,20 @@ h1 {
 
 .navbar-toggler-icon {
   position: absolute;
+  background-color: rgba(0, 0, 0, 0.411);
 }
 
 #collapsibleNavbar {
   z-index: 100;
-  background-color: rgba(146, 132, 121, 0.473);
 }
 
-ul li .nav-item {
-  background-color: rgba(0, 0, 0, 0.267);
-}
-ul li .navbar {
-  position: absolute;
-}
 ul li:hover {
   display: inline;
   color: #000;
   background-color: rgba(0, 0, 0, 0.411);
   font-family: Arial, Helvetica, sans-serif;
+  font-size: smaller;
   text-align: center;
-  text-transform: uppercase;
   transition: all 0.3s;
 }
 

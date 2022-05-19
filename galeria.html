@@ -24,35 +24,31 @@
       <h1>Flor Vazquez</h1>
     </div>
     <!--inicia navbar-->
-    <nav class="navbar navbar-expand-md bg-gradient-light navbar-dark">
-      <!-- Brand
-                <a class="navbar-brand" href="#">Menu:</a> -->
-      <!-- Toggler/collapsibe Button -->
-      <button class="navbar-toggler dropup" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon bg-dark"></span>
-      </button>
-      <!-- Navbar links -->
-      <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link text-white" href="home.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="blog.html">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="galeria.html">Galeria</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="comprar.html">Compras</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="recetas.html">El producto</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="contacto.html">Contacto</a>
-          </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <button class="navbar-toggler navbar-dark shadow-5-strong" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded=""
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown navbar-dark">
+              <a class="nav-link dropdown-toggle text-white" role="menu" id="navbarDarkDropdownMenuLink" data-bs-toggle="dropdown">
+                Menu:
+              </a>
+              <ul class="dropdown-menu bg-black rounded"
+                aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="home.html">Home</a></li>
+                <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                <li><a class="dropdown-item" href="galeria.html">Galeria</a></li>
+                <li><a class="dropdown-item" href="comprar.html">Compras</a></li>
+                <li><a class="dropdown-item" href="recetas.html">Recetas</a></li>
+                <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
     <!--termina navbar-->
