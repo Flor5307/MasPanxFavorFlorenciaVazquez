@@ -2,33 +2,18 @@
 .all {
   background: radial-gradient($gradient-1);
 }
-
-.form {
-  text-align: center;
-  font-size: 25px;
+.map-container-google-2{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
 }
-
-.icon {
-  width: 64px;
-  height: 64px;
-  margin: 8px;
-}
-
-.radio {
-  justify-content: space-around;
-  display: flex;
-}
-
-.pedir {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  :hover {
-    background-color: rgba(0, 0, 0, 0.438);
-    color: map-get($map:$colores, $key:primary-6);
-    text-transform: uppercase;
-  }
+.map-container-2 iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
 }
 
 /* contacto-fin*/

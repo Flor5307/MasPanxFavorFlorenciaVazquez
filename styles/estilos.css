@@ -149,9 +149,9 @@ footer {
   .footer-menu ul li {
     display: flex;
     text-decoration: none;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    border-radius: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 4px;
     color: wheat;
   }
 }
@@ -166,31 +166,19 @@ footer {
   background: radial-gradient(wheat, #8c7b65, #734002);
 }
 
-.form {
-  text-align: center;
-  font-size: 25px;
+.map-container-google-2 {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
 }
 
-.icon {
-  width: 64px;
-  height: 64px;
-  margin: 8px;
-}
-
-.radio {
-  justify-content: space-around;
-  display: flex;
-}
-
-.pedir {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.pedir :hover {
-  background-color: rgba(0, 0, 0, 0.438);
-  color: #000;
-  text-transform: uppercase;
+.map-container-2 iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
 /* contacto-fin*//*# sourceMappingURL=estilos.css.map */

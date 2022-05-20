@@ -24,257 +24,83 @@
       <h1>Flor Vazquez</h1>
     </div>
     <!--inicia navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="container-fluid">
-        <button class="navbar-toggler navbar-dark shadow-5-strong" data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded=""
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item dropdown navbar-dark">
-              <a class="nav-link dropdown-toggle text-white bg-black" role="menu" id="navbarDarkDropdownMenuLink" data-bs-toggle="dropdown">
-                Menu:
-              </a>
-              <ul class="dropdown-menu bg-black rounded"
-                aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="home.html">Home</a></li>
-                <li><a class="dropdown-item" href="blog.html">Blog</a></li>
-                <li><a class="dropdown-item" href="galeria.html">Galeria</a></li>
-                <li><a class="dropdown-item" href="comprar.html">Compras</a></li>
-                <li><a class="dropdown-item" href="recetas.html">Recetas</a></li>
-                <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
+    <nav class="navbar navbar-expand-md bg-gradient-light navbar-dark">
+      <!-- Brand
+                <a class="navbar-brand" href="#">Menu:</a> -->
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler dropup" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="galeria.html">Galeria</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="comprar.html">Compras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="recetas.html">El producto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
       </div>
     </nav>
     <!--termina navbar-->
   </header>
-  <div class="all">
-    <h3 class="font-weight-bold text-center">Pongase en contacto con el Chef</h3>
-    <div class="container-fluid">
-      <form class="row">
-        <div class="col-12 text-center ">
-          <label class="col-1" for="nombre">Nombre</label>
-          <input class="col-3" type="text" id="nombre" placeholder="Escribe tu nombre aca" />
-        </div>
-        <div class="col-12 text-center ">
-          <label class="col-1" for="apellido">Apellido</label>
-          <input class="col-3" type="text" id="apellido" placeholder="Escribe tu apellido aca" />
-        </div>
-        <div class="col-12 text-center ">
-          <label class="col-1" for="email">Email</label>
-          <input class="col-3" type="email" id="email" placeholder="Escribe tu email aca" />
-        </div>
-        <div class="col-12 text-center ">
-          <label class="col-1" for="tel">Telefono</label>
-          <input class="col-3" type="tel" id="tel" placeholder="Escribe tu telefono aca" />
-        </div>
-        <div class="col-12 d-flex align-items-center justify-content-center">
-          <label class="col-1 p-4" for="comentarios">Asunto</label>
-          <textarea class="col-3" rows="6" id="comentarios" placeholder="Escribe tu Asunto"></textarea>
-        </div>
-      </form>
-    </div>
-    <div class="container mt-4">
-      <h3 class="font-weight-bold text-center">¿Que tipo de comensal sos?</h3>
-
-      <div class="btn-group d-flex justify-content-center" role="group" aria-label="Basic radio toggle button group">
-        <div class="p-4">
-          <img class="pl-2" src="img/icons/pasta1.png" for="comensal_1" alt="pasta-con-verduras" />
-          <div class="row-cols-2">
-            <input type="radio" class="form-check-input" name="btnradio" id="comensal_1" autocomplete="off" checked>
-            <label for="comensal_1">Vegano</label>
-          </div>
-        </div>
-
-        <div class="p-4">
-          <img class="pl-4" src="img/icons/pasta3.png" for="comensal_2" alt="pasta-con-verduras" />
-          <div class="row-cols-2">
-            <input type="radio" class="form-check-input" name="btnradio" id="comensal_2" autocomplete="off">
-            <label for="comensal_2">Vegetariano</label>
-          </div>
-        </div>
-        <div class="p-4">
-          <img class="pl-2" src="img/icons/gluten1.png" for="comensal_3" alt="pasta-con-verduras" />
-          <div class="row-cols-2">
-            <input type="radio" class="form-check-input" name="btnradio" id="comensal_3" autocomplete="off">
-            <label for="comensal_3">Celiaco</label>
-          </div>
-        </div>
-        <div class="p-4">
-          <img class="pl-4" src="img/icons/pasta2.png" for="comensal_4" alt="pasta-con-verduras" />
-          <div class="row-cols-2">
-            <input type="radio" class="form-check-input" name="btnradio" id="comensal_4" autocomplete="off">
-            <label class="text-nowrap" for="comensal_4">Como de todo</label>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container mt-4">
-    <h3 class="font-weight-bold text-center">Para comprar, por favor, ingrese sus datos:</h3>
+  <div class="all container-fluid col-12">
     <div class="row">
-        <div class="input-group m-3 col-lg-12">
-          <div class="input-group-prepend col-2 ms-3 me-2">
-            <label class="input-group-text" for="inputGroupSelect01">Pastas</label>
-          </div>
-          <select class="custom-select col-3 me-4" id="inputGroupSelect01">
-            <option value="0">Hoy pastas no llevo</option>
-            <option value="1">Ñoquis rellenos</option>
-            <option value="2">Ñoquis</option>
-            <option value="3">Fideos verdes, violetas o al huevo</option>
-            <option value="4">Capellettis comunes</option>
-            <option value="5">Capellettis especiales</option>
-          </select>
-          <div class="input-group-append col-2 me-2">
-            <label class="input-group-text" for="inputGroupSelect02">Cantidad</label>
-          </div>
-          <select class="custom-select col-3" id="inputGroupSelect02">
-            <option value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-          </select>
-        </div>
-        <div class="input-group m-3 col-lg-12">
-          <div class="input-group-prepend col-2 ms-3 me-2">
-            <label class="input-group-text" for="inputGroupSelect01">Panes</label>
-          </div>
-          <select class="custom-select col-3 me-4" id="inputGroupSelect01">
-            <option value="0">Hoy panes no llevo</option>
-            <option value="1">De centeno</option>
-            <option value="2">Blanco</option>
-            <option value="3">Rellenos</option>
-            <option value="4">Multicereal</option>
-            <option value="5">Blanco con nueces</option>
-          </select>
-          <div class="input-group-append col-2 me-2">
-            <label class="input-group-text" for="inputGroupSelect02">Cantidad</label>
-          </div>
-          <select class="custom-select col-3" id="inputGroupSelect02">
-            <option value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-          </select>
-        </div>
-        <div class="input-group m-3 col-lg-12">
-          <div class="input-group-prepend col-2 ms-3 me-2">
-            <label class="input-group-text" for="inputGroupSelect01">Salsas</label>
-          </div>
-          <select class="custom-select col-3 me-4" id="inputGroupSelect01">
-            <option value="0">Hoy salsas no llevo</option>
-            <option value="1">Bolognesa</option>
-            <option value="2">Crema de champignones</option>
-            <option value="3">Crema de limon</option>
-            <option value="4">Napolitana</option>
-            <option value="5">Tomate, aceituna y ajo</option>
-          </select>
-          <div class="input-group-append col-2 me-2">
-            <label class="input-group-text" for="inputGroupSelect02">Cantidad</label>
-          </div>
-          <select class="custom-select col-3" id="inputGroupSelect02">
-            <option value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-          </select>
-        </div>
-      </div>
-    </div>
-
-    <div class="container mt-4">
-      <h3 class="font-weight-bold text-center">¿Como queres pagar?</h3>
-      <form>
-        <div class="btn-group d-flex justify-content-center" role="group" aria-label="Basic radio toggle button group">
-          <div class="p-2">
-            <img class="pl-2" src="img/icons/mastercard.png" for="pago_1" alt="pasta-con-verduras" />
-            <div class="row-cols-2">
-              <input type="radio" class="form-check-input" name="btnradio" id="pago_1" autocomplete="off" checked>
-              <label for="pago_1">Debito</label>
-            </div>
-          </div>
-          <div class="p-2">
-            <img class="pl-3" src="img/icons/mercadopago.png" for="pago_2" alt="mercadodepago" />
-            <div class="row-cols-2">
-              <input type="radio" class="form-check-input" name="btnradio" id="pago_2" autocomplete="off">
-              <label class="text-nowrap" for="pago_2">Mercado Pago</label>
-            </div>
-          </div>
-          <div class="p-2">
-            <img class="pl-5" src="img/icons/efectivo.png" for="pago_3" alt="pagar-con-efectivo" />
-            <div class="row-cols-2">
-              <input type="radio" class="form-check-input" name="btnradio" id="pago_3" autocomplete="off">
-              <label class="text-nowrap" for="pago_3">Efectivo(retiro en el local)</label>
-            </div>
-          </div>
-
-          <div class="p-2">
-            <img class="pl-0" src="img/icons/visa.png" for="pago_4" alt="pasta-con-verduras" />
-            <div class="row-cols-2">
-              <input type="radio" class="form-check-input" name="btnradio" id="pago_4" autocomplete="off">
-              <label class="text-nowrap" for="pago_4">Credito</label>
-            </div>
-          </div>
-        </div>
-
-
-
-        <div class="creditCardForm">
-          <div class="payment">
-            <form>
-              <div class="form-group owner">
-                <label for="owner">Nombres y apellidos(como figura en la tarjeta)</label>
-                <input type="text" class="form-control" id="owner">
+      <h3 class="font-weight-bold text-center">Pongase en contacto con el Chef</h3>
+      <div class="col-lg-5" style="display: flex; justify-content: space-around;">
+        <div class="card text-dark mb-3 shadow" style="width: 25rem;">
+          <div class="card-header"><img src="/img/icons/user.png" alt=""> Complete sus datos</div>
+          <div class="card-body">
+            <form class="row rounded">
+              <div class="col-12 text-center mt-3 row">
+                <img src="/img/icons/userr}.png" class="col-2" style="width: 60px;" alt="icon-telefono">
+                <input class="col-10 rounded" style="height: 50px; min-width: 170px;" type="text" id="nombre"
+                  placeholder="Escribe tu nombre aca" />
               </div>
-              <div class="form-group CVV">
-                <label for="cvv">Codigo de seguridad</label>
-                <input type="text" class="form-control" id="cvv">
+              <div class="col-12 text-center mt-3 row">
+                <img src="/img/icons/user3.png" class="col-2" style="width: 60px;" alt="icon-telefono">
+                <input class="col-10 rounded" style="height: 50px; min-width: 170px;" type="text" id="apellido"
+                  placeholder="Escribe tu apellido aca" />
               </div>
-              <div class="form-group" id="card-number-field">
-                <label for="cardNumber">Numero de tarjeta</label>
-                <input type="text" class="form-control" id="cardNumber">
+              <div class="col-12 text-center mt-3 row">
+                <img src="/img/icons/email.png" class="col-2" style="width: 60px;" alt="icon-telefono">
+                <input class="col-10 rounded" style="height: 50px; min-width: 170px;" type="email" id="email"
+                  placeholder="Escribe tu email aca" />
               </div>
-              <div class="form-group" id="expiration-date">
-                <label>Fecha de expiracion</label>
-                <select>
-                  <option value="01">Enero</option>
-                  <option value="02">Febrero</option>
-                  <option value="03">Marzo</option>
-                  <option value="04">Abril</option>
-                  <option value="05">Mayo</option>
-                  <option value="06">Junio</option>
-                  <option value="07">Julio</option>
-                  <option value="08">Agosto</option>
-                  <option value="09">Septiembre</option>
-                  <option value="10">Octubre</option>
-                  <option value="11">Noviembre</option>
-                  <option value="12">Diciembre</option>
-                </select>
-                <select>
-                  <option value="16"> 2016</option>
-                  <option value="17"> 2017</option>
-                  <option value="18"> 2018</option>
-                  <option value="19"> 2019</option>
-                  <option value="20"> 2020</option>
-                  <option value="21"> 2021</option>
-                </select>
+              <div class="col-12 text-center mt-3 row">
+                <img src="/img/icons/phone.png" class="col-2" style="width: 60px;" alt="icon-telefono">
+                <input class="col-10 rounded" style="height: 50px; min-width: 170px;" type="tel" id="tel"
+                  placeholder="Escribe tu telefono aca" />
               </div>
-              <div class="form-group text-center" id="pay-now">
-                <button type="submit" class="btn btn-outline-dark" id="confirm-datos">Hacer la compra</button>
+              <div class="col-12 text-center mt-3 row">
+                <img src="/img/icons/pen.png" class="col-2" style="width: 60px;" alt="icon-lapicera">
+                <textarea class="col-10 rounded" style="height: 50px; min-width: 170px;" rows="6" id="comentarios"
+                  placeholder="Escribe tu Asunto"></textarea>
               </div>
             </form>
+            <button class="btn btn-dark mt-3" type="submit">Submit</button>
           </div>
         </div>
-    </div>
-    <div class="container mt-5 mb-5">
-      <div class="text-center">
+      </div>
+      <div class="col-lg-7 row mb-1 mt-2 ms-1">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13137.528426543311!2d-58.40592325!3d-34.59449805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1653008041672!5m2!1ses!2sar"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   </div>
@@ -289,15 +115,15 @@
       </div>
       <ul class="foot_contactos">
         <li>
-          <img src="/img/icons/icons8-instagram-24.png" alt="instagram" />
+          <img src="/img/icons/-instagram.color.svg" style="width: 30px;" alt="instagram" />
           <a href="https://www.instagram.com/maspanxfavor/">Instagram</a>
         </li>
         <li>
-          <img src="/img/icons/facebook.png" alt="facebook" />
+          <img src="/img/icons/facebook.color.png" style="width: 30px;" alt="facebook" />
           <a href="https://www.facebook.com/florencia.vazquez.75641">Facebook</a>
         </li>
         <li>
-          <img src="/img/icons/whatsapp.png" alt="whatsapp" />
+          <img src="/img/icons/icons8-whatsapp.svg" style="width: 30px;" alt="whatsapp" />
           <a href="">+54 111234567</a>
         </li>
       </ul>
@@ -307,13 +133,13 @@
       <div>
         <ul class="pagination">
           <li class="page-item">
-            <a class="page-link" href="home.html">Home</a>
+            <a class="page-link" href="home.html">...</a>
           </li>
           <li class="page-item">
-            <a class="page-link" href="blog.html">Blog</a>
+            <a class="page-link" href="blog.html">...</a>
           </li>
           <li class="page-item">
-            <a class="page-link" href="galeria.html">Galeria</a>
+            <a class="page-link" href="galeria.html">...</a>
           </li>
           <li class="page-item">
             <a class="page-link" href="comprar.html">Compras online</a>
