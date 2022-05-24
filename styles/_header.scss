@@ -9,11 +9,13 @@ header {
 
 .first {
   @include estetica;
-  padding-top: 50px;
+  padding-top: 10px;
   font-size: 35px;
   font-family: $font-1;
 }
+
 h1 {
+  padding-top: 50px;
   @include estetica;
   font-size: 75px;
   font-family: $font-2;
