@@ -97,9 +97,9 @@
     <div class="row">
         <div class="input-group mt-3 col-lg-12">
           <div class="input-group-prepend col-2 ms-3 me-2">
-            <label class="input-group-text" for="inputGroupSelect01">Pastas</label>
+            <label class="input-group-text" for="Pastas01">Pastas</label>
           </div>
-          <select class="custom-select col-3 me-4" id="inputGroupSelect01">
+          <select class="custom-select col-3 me-4" id="Pastas01">
             <option value="0">Hoy no llevo</option>
             <option value="1">Ñoquis rellenos</option>
             <option value="2">Ñoquis</option>
@@ -108,21 +108,22 @@
             <option value="5">Capellettis especiales</option>
           </select>
           <div class="input-group-append col-2 me-2">
-            <label class="input-group-text" for="inputGroupSelect02">Cantidad</label>
+            <label class="input-group-text" for="Pastas02">Cantidad</label>
           </div>
-          <select class="custom-select col-3" id="inputGroupSelect02">
+          <select class="custom-select col-3" id="Pastas02">
             <option value="0">0</option>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
           </select>
+          <button id="submit_pastas">Calcular costo</button>
         </div>
         <div class="input-group mt-3 col-lg-12">
           <div class="input-group-prepend col-2 ms-3 me-2">
-            <label class="input-group-text" for="inputGroupSelect01">Panes</label>
+            <label class="input-group-text" for="Panes01">Panes</label>
           </div>
-          <select class="custom-select col-3 me-4" id="inputGroupSelect01">
+          <select class="custom-select col-3 me-4" id="Panes01">
             <option value="0">Hoy no llevo</option>
             <option value="1">De centeno</option>
             <option value="2">Blanco</option>
@@ -131,21 +132,22 @@
             <option value="5">Blanco con nueces</option>
           </select>
           <div class="input-group-append col-2 me-2">
-            <label class="input-group-text" for="inputGroupSelect02">Cantidad</label>
+            <label class="input-group-text" for="Panes02">Cantidad</label>
           </div>
-          <select class="custom-select col-3" id="inputGroupSelect02">
+          <select class="custom-select col-3" id="Panes02">
             <option value="0">0</option>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
           </select>
+          <button id="submit_panes">Calcular costo</button>
         </div>
         <div class="input-group mt-3 col-lg-12">
           <div class="input-group-prepend col-2 ms-3 me-2">
-            <label class="input-group-text" for="inputGroupSelect01">Salsas</label>
+            <label class="input-group-text" for="Salsas01">Salsas</label>
           </div>
-          <select class="custom-select col-3 me-4" id="inputGroupSelect01">
+          <select class="custom-select col-3 me-4" id="Salsas01">
             <option value="0">Hoy no llevo</option>
             <option value="1">Bolognesa</option>
             <option value="2">Crema de champignones</option>
@@ -154,15 +156,16 @@
             <option value="5">Tomate, aceituna y ajo</option>
           </select>
           <div class="input-group-append col-2 me-2">
-            <label class="input-group-text" for="inputGroupSelect02">Cantidad</label>
+            <label class="input-group-text" for="Salsas02">Cantidad</label>
           </div>
-          <select class="custom-select col-3" id="inputGroupSelect02">
+          <select class="custom-select col-3" id="Salsas02">
             <option value="0">0</option>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
           </select>
+          <button id="submit_salsas">Calcular costo</button>
         </div>
       </div>
     </div>
@@ -301,6 +304,7 @@
       </div>
     </div>
   </footer>
+  <script src="/comprar.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
     integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
     crossorigin="anonymous"></script>
