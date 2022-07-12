@@ -84,3 +84,23 @@ document.getElementById('submit_salsas').onclick = function() {
             break;
     } 
 } 
+
+
+//ARRAYS, OBJETOS Y PRODUCTOS 
+
+let recomendaciones_con_descuento = ["1: Ñoquis rellenos con Bolognesa", "2: Capelettis con Crema de champignones", "3: Fideos con Crema de limon", "4: Ñoquis conTomate, aceituna y ajo"];
+
+for (let compras = 0; compras < 4; compras++){
+    alert(recomendaciones_con_descuento[compras]);
+}
+let entrada = prompt("que combinacion armarias?: ")
+
+console.log(recomendaciones_con_descuento)
+
+recomendaciones_con_descuento.push("5: Capelletis especiales con fileto")
+
+console.log( recomendaciones_con_descuento.indexOf("1: Ñoquis rellenos con Bolognesa"))
+
+console.log(recomendaciones_con_descuento.includes("Fideos con tuco"))
+console.log(recomendaciones_con_descuento.includes("1: Ñoquis rellenos con Bolognesa"))
+console.log(recomendaciones_con_descuento.includes("Capelettis con crema"))
