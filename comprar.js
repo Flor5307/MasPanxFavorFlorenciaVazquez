@@ -8,19 +8,19 @@ document.getElementById('submit_panes').onclick = function() {
 
     switch (tipo_pan) {
         case "De centeno":
-            alert( 300 * cantidad_pan);
+            alert( 700 * cantidad_pan);
             break;
         case "Blanco":
-            alert( 200 * cantidad_pan);
+            alert( 400 * cantidad_pan);
             break;
         case "Relleno":
-            alert( 250 * cantidad_pan);
+            alert( 650 * cantidad_pan);
             break;
         case "Multicereal":
-            alert( 500 * cantidad_pan);
+            alert( 550 * cantidad_pan);
             break;
         case "Blanco con nueces":
-            alert(550 * cantidad_pan);
+            alert(850 * cantidad_pan);
             break;
         default:
             alert(0);
@@ -37,13 +37,13 @@ document.getElementById('submit_pastas').onclick = function() {
 
     switch (tipo_pastas) {
         case "Ñoquis rellenos":
-            alert( 300 * cantidad_pastas);
+            alert( 580 * cantidad_pastas);
             break;
         case "Ñoquis":
-            alert( 200 * cantidad_pastas);
+            alert( 450 * cantidad_pastas);
             break;
         case "Fideos verdes, violetas o al huevo":
-            alert( 250 * cantidad_pastas);
+            alert( 350 * cantidad_pastas);
             break;
         case "Capellettis comunes":
             alert( 500 * cantidad_pastas);
@@ -65,13 +65,13 @@ document.getElementById('submit_salsas').onclick = function() {
 
     switch (tipo_salsas) {
         case "Bolognesa":
-            alert( 150 * cantidad_salsas);
+            alert( 550 * cantidad_salsas);
             break;
         case "Crema de champignones":
-            alert( 250 * cantidad_salsas);
+            alert( 450 * cantidad_salsas);
             break;
         case "Crema de limon":
-            alert( 200 * cantidad_salsas);
+            alert( 340 * cantidad_salsas);
             break;
         case "Napolitana":
             alert( 300 * cantidad_salsas);
@@ -88,12 +88,14 @@ document.getElementById('submit_salsas').onclick = function() {
 
 //ARRAYS, OBJETOS Y PRODUCTOS 
 
+alert("Te dejamos nuestras mejores combinaciones!!")
+
 let recomendaciones_con_descuento = ["1: Ñoquis rellenos con Bolognesa", "2: Capelettis con Crema de champignones", "3: Fideos con Crema de limon", "4: Ñoquis conTomate, aceituna y ajo"];
 
 for (let compras = 0; compras < 4; compras++){
     alert(recomendaciones_con_descuento[compras]);
 }
-let entrada = prompt("que combinacion armarias?: ")
+let entrada = prompt("Que combinacion armarias? ")
 
 console.log(recomendaciones_con_descuento)
 
@@ -104,3 +106,17 @@ console.log( recomendaciones_con_descuento.indexOf("1: Ñoquis rellenos con Bolo
 console.log(recomendaciones_con_descuento.includes("Fideos con tuco"))
 console.log(recomendaciones_con_descuento.includes("1: Ñoquis rellenos con Bolognesa"))
 console.log(recomendaciones_con_descuento.includes("Capelettis con crema"))
+
+let promociones = [
+    {variedad: "Ñoquis rellenos con Bolognesa", precio: 600},
+    {variedad: "Capelettis con Crema de champignones", precio: 850}, 
+    {variedad: "Fideos con Crema de limon", precio: 480}, 
+    {variedad: "Ñoquis con Tomate, aceituna y ajo", precio: 800}];
+
+let resultado = promociones.find((la) => la.variedad === "Ñoquis rellenos con Bolognesa")
+let resultado1 = promociones.find((la) => la.variedad === "Ñoquis con crema")
+let resultado2 = promociones.find((la) => la.variedad === "Fideos con Crema de limon")
+
+console.log(resultado)
+console.log(resultado1)
+console.log(resultado2)
