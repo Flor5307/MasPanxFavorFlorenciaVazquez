@@ -142,12 +142,20 @@ let comensal_1 = document.getElementById("comensal_1");
 
 comensal_1.addEventListener("click", function(){
     console.log("Productos para veganos", vegano)
+    let ñoquisRellenos = document.getElementById("ñoquisRellenos"); ñoquisRellenos.remove();
+    let capelletis = document.getElementById("capelletis"); capelletis.remove();
+    let capelletisEspeciales = document.getElementById("capelletisEspeciales"); capelletisEspeciales.remove();
+    let bolognesa = document.getElementById("bolognesa"); bolognesa.remove();
+    let champi = document.getElementById("champi"); champi.remove();
+    let limon = document.getElementById("limon"); limon.remove();
 });
 
 let comensal_2 = document.getElementById("comensal_2");
 
 comensal_2.addEventListener("click", function(){
     console.log("Productos para vegetarianos", vegetariano)
+    let capelletisEspeciales = document.getElementById("capelletisEspeciales"); capelletisEspeciales.remove();
+    let bolognesa = document.getElementById("bolognesa"); bolognesa.remove();
 });
 
 let comensal_3 = document.getElementById("comensal_3");
