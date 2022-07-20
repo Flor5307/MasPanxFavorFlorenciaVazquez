@@ -84,7 +84,6 @@ document.getElementById('submit_salsas').onclick = function() {
             break;
     } 
 } 
-/*
 
 //ARRAYS, OBJETOS Y PRODUCTOS 
 
@@ -115,7 +114,6 @@ let resultado2 = promociones.find((la) => la.variedad === "Fideos con Crema de l
 console.log(resultado)
 console.log(resultado1)
 console.log(resultado2)
-*/
 
 //USUARIO DE TARJETA
 
