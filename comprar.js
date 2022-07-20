@@ -84,7 +84,7 @@ document.getElementById('submit_salsas').onclick = function() {
             break;
     } 
 } 
-
+/*
 
 //ARRAYS, OBJETOS Y PRODUCTOS 
 
@@ -99,13 +99,8 @@ let entrada = prompt("Que combinacion armarias? ")
 
 console.log(recomendaciones_con_descuento)
 
-recomendaciones_con_descuento.push("5: Capelletis especiales con fileto")
 
 console.log( recomendaciones_con_descuento.indexOf("1: Ñoquis rellenos con Bolognesa"))
-
-console.log(recomendaciones_con_descuento.includes("Fideos con tuco"))
-console.log(recomendaciones_con_descuento.includes("1: Ñoquis rellenos con Bolognesa"))
-console.log(recomendaciones_con_descuento.includes("Capelettis con crema"))
 
 let promociones = [
     {variedad: "Ñoquis rellenos con Bolognesa", precio: 600},
@@ -120,3 +115,242 @@ let resultado2 = promociones.find((la) => la.variedad === "Fideos con Crema de l
 console.log(resultado)
 console.log(resultado1)
 console.log(resultado2)
+*/
+
+//USUARIO DE TARJETA
+
+let tarjeta_usuario = []
+
+function set_data(){
+    
+    let nombre_usuario = document.getElementById("nombre");
+    let apellido_usuario = document.getElementById("apellido");
+    let codigo_usuario = document.getElementById("cvv");
+    let usuario = {"nombre": nombre_usuario.value, "apellido": apellido_usuario.value, "cvv": codigo_usuario.value};
+    
+    let usuario_JSON = JSON.stringify(usuario);
+    console.log(usuario_JSON);
+    tarjeta_usuario.push(usuario_JSON);
+    sessionStorage.setItem("usuarios", tarjeta_usuario);
+    let buton = document.getElementById("confirm-datos");
+    buton.addEventListener("click", set_data);
+}
+
+//¿Que tipo de comensal sos?
+
+let comensal_1 = document.getElementById("comensal_1");
+
+comensal_1.addEventListener("click", function(){
+    console.log("Productos para veganos", vegano)
+});
+
+let comensal_2 = document.getElementById("comensal_2");
+
+comensal_2.addEventListener("click", function(){
+    console.log("Productos para vegetarianos", vegetariano)
+});
+
+let comensal_3 = document.getElementById("comensal_3");
+
+comensal_3.addEventListener("click", function(){
+    alert("NO TENEMOS PRODUCTOS PARA CELIACOS")
+});
+
+let comensal_4 = document.getElementById("comensal_4");
+
+comensal_4.addEventListener("click", function(){
+    console.log("Productos aptos para todos/as", como_de_todo)
+});
+
+
+let vegano = [
+    {
+        producto: "Ñoquis",
+        categoria: "Pastas",
+        precio: "450",
+    },
+    {
+        producto: "Fideos",
+        category: "Pastas",
+        precio: "350",
+    },
+    {
+        producto: "Napolitana",
+        categoria: "salsas",
+        precio: "300",
+    },
+    {
+        producto: "Tomate,aceituna y ajo",
+        categoria: "salsas",
+        precio: "450",
+    },
+    {
+        producto: "De centeno",
+        categoria: "Panes",
+        precio: "700",
+    },
+    {
+        producto: "Blanco",
+        categoria: "Panes",
+        precio: "400",
+    },
+    {
+        producto: "Relleno",
+        categoria: "Panes",
+        precio: "650",
+    },
+    {
+        producto: "Multicereal",
+        categoria: "Panes",
+        precio: "550",
+    },
+    {
+        producto: "Blanco con nueces",
+        categoria: "Panes",
+        precio: "850",
+    },
+]
+let vegetariano = [
+    {
+        producto: "Ñoquis rellenos",
+        categoria: "Pastas",
+        precio: "580",
+    },
+    {
+        producto: "Ñoquis",
+        categoria: "Pastas",
+        precio: "450",
+    },
+    {
+        producto: "Fideos",
+        category: "Pastas",
+        precio: "350",
+    },
+    {
+        producto: "Capellettis",
+        categoria: "Pastas",
+        precio: "500",
+    },
+    {
+        producto: "Crema de champi",
+        categoria: "salsas",
+        precio: "450",
+    },
+    {
+        producto: "Crema de limon",
+        categoria: "salsas",
+        precio: "340",
+    },
+    {
+        producto: "Napolitana",
+        categoria: "salsas",
+        precio: "300",
+    },
+    {
+        producto: "Tomate,aceituna y ajo",
+        categoria: "salsas",
+        precio: "450",
+    },
+    {
+        producto: "De centeno",
+        categoria: "Panes",
+        precio: "700",
+    },
+    {
+        producto: "Blanco",
+        categoria: "Panes",
+        precio: "400",
+    },
+    {
+        producto: "Relleno",
+        categoria: "Panes",
+        precio: "650",
+    },
+    {
+        producto: "Multicereal",
+        categoria: "Panes",
+        precio: "550",
+    },
+    {
+        producto: "Blanco con nueces",
+        categoria: "Panes",
+        precio: "850",
+    },
+]
+let como_de_todo = [
+    {
+        producto: "Ñoquis rellenos",
+        categoria: "Pastas",
+        precio: "580",
+    },
+    {
+        producto: "Ñoquis",
+        categoria: "Pastas",
+        precio: "450",
+    },
+    {
+        producto: "Fideos",
+        category: "Pastas",
+        precio: "350",
+    },
+    {
+        producto: "Capellettis",
+        categoria: "Pastas",
+        precio: "500",
+    },
+    {
+        producto: "Capellettis especiales",
+        categoria: "Pastas",
+        precio: "550",
+    },
+    {
+        producto: "Bolognesa",
+        categoria: "salsas",
+        precio: "550",
+    },
+    {
+        producto: "Crema de champi",
+        categoria: "salsas",
+        precio: "450",
+    },
+    {
+        producto: "Crema de limon",
+        categoria: "salsas",
+        precio: "340",
+    },
+    {
+        producto: "Napolitana",
+        categoria: "salsas",
+        precio: "300",
+    },
+    {
+        producto: "Tomate,aceituna y ajo",
+        categoria: "salsas",
+        precio: "450",
+    },
+    {
+        producto: "De centeno",
+        categoria: "Panes",
+        precio: "700",
+    },
+    {
+        producto: "Blanco",
+        categoria: "Panes",
+        precio: "400",
+    },
+    {
+        producto: "Relleno",
+        categoria: "Panes",
+        precio: "650",
+    },
+    {
+        producto: "Multicereal",
+        categoria: "Panes",
+        precio: "550",
+    },
+    {
+        producto: "Blanco con nueces",
+        categoria: "Panes",
+        precio: "850",
+    },
+];
