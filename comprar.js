@@ -85,6 +85,7 @@ document.getElementById('submit_salsas').onclick = function() {
     } 
 } 
 
+/*
 //ARRAYS, OBJETOS Y PRODUCTOS 
 
 alert("Te dejamos nuestras mejores combinaciones!!")
@@ -100,7 +101,6 @@ console.log(recomendaciones_con_descuento)
 
 
 console.log( recomendaciones_con_descuento.indexOf("1: Ñoquis rellenos con Bolognesa"))
-
 let promociones = [
     {variedad: "Ñoquis rellenos con Bolognesa", precio: 600},
     {variedad: "Capelettis con Crema de champignones", precio: 850}, 
@@ -114,25 +114,28 @@ let resultado2 = promociones.find((la) => la.variedad === "Fideos con Crema de l
 console.log(resultado)
 console.log(resultado1)
 console.log(resultado2)
-
+*/
 //USUARIO DE TARJETA
 
 let tarjeta_usuario = []
 
-function set_data(){
+function save_data(){
     
     let nombre_usuario = document.getElementById("nombre");
-    let apellido_usuario = document.getElementById("apellido");
     let codigo_usuario = document.getElementById("cvv");
-    let usuario = {"nombre": nombre_usuario.value, "apellido": apellido_usuario.value, "cvv": codigo_usuario.value};
+    let tarjeta_usuario = document.getElementById("numerotarjeta");
+    let usuario = {"nombre": nombre_usuario.value, "numeroTarjeta": tarjeta_usuario.value, "cvv": codigo_usuario.value};
     
     let usuario_JSON = JSON.stringify(usuario);
     console.log(usuario_JSON);
     tarjeta_usuario.push(usuario_JSON);
     sessionStorage.setItem("usuarios", tarjeta_usuario);
     let buton = document.getElementById("confirm-datos");
-    buton.addEventListener("click", set_data);
+    buton.addEventListener("click", save_data);
 }
+
+let buton = document.getElementById("confirm-datos");
+buton.addEventListener("click", save_data);
 
 //¿Que tipo de comensal sos?
 
@@ -159,7 +162,17 @@ comensal_2.addEventListener("click", function(){
 let comensal_3 = document.getElementById("comensal_3");
 
 comensal_3.addEventListener("click", function(){
-    alert("NO TENEMOS PRODUCTOS PARA CELIACOS")
+    let ñoquisRellenos = document.getElementById("ñoquisRellenos"); ñoquisRellenos.remove();
+    let capelletis = document.getElementById("capelletis"); capelletis.remove();
+    let capelletisEspeciales = document.getElementById("capelletisEspeciales"); capelletisEspeciales.remove();
+    let centeno = document.getElementById("centeno"); centeno.remove();
+    let blanco = document.getElementById("blanco"); blanco.remove();
+    let relleno = document.getElementById("relleno"); relleno.remove();
+    let multicereal = document.getElementById("multicereal"); multicereal.remove();
+    let conNueces = document.getElementById("conNueces"); conNueces.remove();
+    let ñoquis = document.getElementById("ñoquis"); ñoquis.remove();
+    let fideos = document.getElementById("fideos"); fideos.remove();
+    alert("Perdon, solo tenemos salsas sin TACC")
 });
 
 let comensal_4 = document.getElementById("comensal_4");
