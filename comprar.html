@@ -64,31 +64,31 @@
       <h3 class="font-weight-bold text-center">¿Que tipo de comensal sos?</h3>
       <div class="btn-group d-flex justify-content-center" role="group" aria-label="Basic radio toggle button group">
         <div class="p-2">
-          <img class="pl-2" src="img/icons/pasta1.png" for="comensal_1" alt="pasta-con-verduras" />
+          <img class="pl-4" src="img/icons/pasta2.png" for="comensal_1" alt="spaguetti-con-albondigas" />
           <div class="row-cols-2">
             <input type="radio" class="form-check-input" name="btnradio" id="comensal_1" autocomplete="off" checked>
-            <label for="comensal_1">Vegano</label>
+            <label class="text-nowrap" for="comensal_1">Como de todo</label>
           </div>
         </div>
         <div class="p-2">
-          <img class="pl-4" src="img/icons/pasta3.png" for="comensal_2" alt="spaguetti-en-el-tenedor" />
+          <img class="pl-2" src="img/icons/pasta1.png" for="comensal_2" alt="pasta-con-verduras" />
           <div class="row-cols-2">
             <input type="radio" class="form-check-input" name="btnradio" id="comensal_2" autocomplete="off">
-            <label for="comensal_2">Vegetariano</label>
+            <label for="comensal_2">Vegano</label>
           </div>
         </div>
         <div class="p-2">
-          <img class="pl-2" src="img/icons/gluten1.png" for="comensal_3" alt="sin-tacc" />
+          <img class="pl-4" src="img/icons/pasta3.png" for="comensal_3" alt="spaguetti-en-el-tenedor" />
           <div class="row-cols-2">
             <input type="radio" class="form-check-input" name="btnradio" id="comensal_3" autocomplete="off">
-            <label for="comensal_3">Celiaco</label>
+            <label for="comensal_3">Vegetariano</label>
           </div>
         </div>
         <div class="p-2">
-          <img class="pl-4" src="img/icons/pasta2.png" for="comensal_4" alt="spaguetti-con-albondigas" />
+          <img class="pl-2" src="img/icons/gluten1.png" for="comensal_4" alt="sin-tacc" />
           <div class="row-cols-2">
             <input type="radio" class="form-check-input" name="btnradio" id="comensal_4" autocomplete="off">
-            <label class="text-nowrap" for="comensal_4">Como de todo</label>
+            <label for="comensal_4">Celiaco</label>
           </div>
         </div>
       </div>
@@ -96,35 +96,35 @@
     <h2 class="font-weight-bold text-center mb-3">Para comprar, por favor, agregue al carrito:</h2>
     <div class="container-fluid row justify-content-center">
       <h3>Elegi la pasta:</h3>
-      <div class="card col-2" style="height: 120px;">
+      <div class="card col-2" id="pasta_1" style="height: 120px;">
         <div class="card-body">
           <h4 class="card-header">Ñoquis</h4>
           <span class="precio">$500</span>
           <a href="#" class="btn btn-primary botonCompra" style="font-size:x-small;">Agregar al carrito</a>
         </div>
       </div>
-      <div class="card col-2" style="height: 120px;">
+      <div class="card col-2" id="pasta_2" style="height: 120px;">
         <div class="card-body">
           <h4 class="card-header">Ñoquis rellenos</h4>
           <span class="precio">$580</span>
           <a href="#" class="btn btn-primary botonCompra" style="font-size:x-small;">Agregar al carrito</a>
         </div>
       </div>
-      <div class="card col-2" style="height: 120px;">
+      <div class="card col-2" id="pasta_3" style="height: 120px;">
         <div class="card-body">
           <h4 class="card-header">Fideos al huevo</h4>
           <span class="precio">$430</span>
           <a href="#" class="btn btn-primary botonCompra" style="font-size:x-small;">Agregar al carrito</a>
         </div>
       </div>
-      <div class="card col-2" style="height: 120px;">
+      <div class="card col-2" id="pasta_4" style="height: 120px;">
         <div class="card-body">
           <h4 class="card-header">Capellettis</h4>
           <span class="precio">$600</span>
           <a href="#" class="btn btn-primary botonCompra" style="font-size:x-small;">Agregar al carrito</a>
         </div>
       </div>
-      <div class="card col-2" style="height: 120px;">
+      <div class="card col-2" id="pasta_5" style="height: 120px;">
         <div class="card-body">
           <h4 class="card-header">Capellettis especiales</h4>
           <span class="precio">$680</span>
@@ -134,35 +134,35 @@
     </div>
     <div class="container-fluid row justify-content-center">
       <h3>Con que salsa acompañas tu pasta?:</h3>
-      <div class="card col-2" style="height: 120px;">
+      <div class="card col-2" id="salsa_1" style="height: 120px;">
         <div class="card-body">
           <h4 class="card-header">Bolognesa</h4>
           <span class="precio">$500</span>
           <a href="#" class="btn btn-primary botonCompra" style="font-size:x-small;">Agregar al carrito</a>
         </div>
       </div>
-      <div class="card col-2" style="height: 120px;">
+      <div class="card col-2" id="salsa_2" style="height: 120px;">
         <div class="card-body">
           <h4 class="card-header">Crema de champi</h4>
           <span class="precio">$400</span>
           <a href="#" class="btn btn-primary botonCompra" style="font-size:x-small;">Agregar al carrito</a>
         </div>
       </div>
-      <div class="card col-2" style="height: 120px;">
+      <div class="card col-2" id="salsa_3" style="height: 120px;">
         <div class="card-body">
           <h4 class="card-header">Crema de limon</h4>
           <span class="precio">$360</span>
           <a href="#" class="btn btn-primary botonCompra" style="font-size:x-small;">Agregar al carrito</a>
         </div>
       </div>
-      <div class="card col-2" style="height: 120px;">
+      <div class="card col-2" id="salsa_4" style="height: 120px;">
         <div class="card-body">
           <h4 class="card-header">Napolitana</h4>
           <span class="precio">$300</span>
           <a href="#" class="btn btn-primary botonCompra" style="font-size:x-small;">Agregar al carrito</a>
         </div>
       </div>
-      <div class="card col-2" style="height: 120px;">
+      <div class="card col-2" id="salsa_5" style="height: 120px;">
         <div class="card-body">
           <h4 class="card-header">Tomate, ajo y aceituna</h4>
           <span class="precio">$480</span>
@@ -172,7 +172,7 @@
     </div>
     <div class="container-fluid row justify-content-center">
       <h3>Mojas el pan en la salsa?:</h3>
-      <div class="card col-2" style="height: 120px;">
+      <div class="card col-2" id="pan_1" style="height: 120px;">
         <div class="card-body">
           <div class="card-header">Blanco</h4>
             <span class="precio">$400</span>
@@ -180,28 +180,28 @@
           </div>
         </div>
       </div>
-      <div class="card col-2" style="height: 120px;">
+      <div class="card col-2" id="pan_2" style="height: 120px;">
         <div class="card-body">
           <h4 class="card-header">De centeno</h4>
           <span class="precio">$800</span>
           <a href="#" class="btn btn-primary botonCompra" style="font-size:x-small;">Agregar al carrito</a>
         </div>
       </div>
-      <div class="card col-2" style="height: 120px;">
+      <div class="card col-2" id="pan_3" style="height: 120px;">
         <div class="card-body">
           <h4 class="card-header">Multicereal</h4>
           <span class="precio">$750</span>
           <a href="#" class="btn btn-primary botonCompra" style="font-size:x-small;">Agregar al carrito</a>
         </div>
       </div>
-      <div class="card col-2" style="height: 120px;">
+      <div class="card col-2" id="pan_4" style="height: 120px;">
         <div class="card-body">
           <h4 class="card-header">Relleno</h4>
           <span class="precio">$500</span>
           <a href="#" class="btn btn-primary botonCompra" style="font-size:x-small;">Agregar al carrito</a>
         </div>
       </div>
-      <div class="card col-2" style="height: 120px;">
+      <div class="card col-2" id="pan_5" style="height: 120px;">
         <div class="card-body">
           <h4 class="card-header">Con nueces</h4>
           <span class="precio">$680</span>
