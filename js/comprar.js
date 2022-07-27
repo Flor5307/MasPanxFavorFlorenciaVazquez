@@ -85,36 +85,6 @@ document.getElementById('submit_salsas').onclick = function() {
     } 
 } 
 
-/*
-//ARRAYS, OBJETOS Y PRODUCTOS 
-
-alert("Te dejamos nuestras mejores combinaciones!!")
-
-let recomendaciones_con_descuento = ["1: Ñoquis rellenos con Bolognesa", "2: Capelettis con Crema de champignones", "3: Fideos con Crema de limon", "4: Ñoquis conTomate, aceituna y ajo"];
-
-for (let compras = 0; compras < 4; compras++){
-    alert(recomendaciones_con_descuento[compras]);
-}
-let entrada = prompt("Que combinacion armarias? ")
-
-console.log(recomendaciones_con_descuento)
-
-
-console.log( recomendaciones_con_descuento.indexOf("1: Ñoquis rellenos con Bolognesa"))
-let promociones = [
-    {variedad: "Ñoquis rellenos con Bolognesa", precio: 600},
-    {variedad: "Capelettis con Crema de champignones", precio: 850}, 
-    {variedad: "Fideos con Crema de limon", precio: 480}, 
-    {variedad: "Ñoquis con Tomate, aceituna y ajo", precio: 800}];
-
-let resultado = promociones.find((la) => la.variedad === "Ñoquis rellenos con Bolognesa")
-let resultado1 = promociones.find((la) => la.variedad === "Ñoquis con crema")
-let resultado2 = promociones.find((la) => la.variedad === "Fideos con Crema de limon")
-
-console.log(resultado)
-console.log(resultado1)
-console.log(resultado2)
-*/
 //USUARIO DE TARJETA
 
 let tarjeta_usuario = []
