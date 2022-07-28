@@ -160,4 +160,35 @@ footer {
 .page-link {
   color: wheat;
   background-color: transparent;
+}
+
+h3 {
+  text-align: center;
+}
+
+.botonCompra {
+  background-color: rgba(115, 64, 2, 0.7176470588);
+}
+
+td {
+  height: 50px;
+  text-align: center;
+  color: black;
+}
+
+.precio {
+  display: block;
+  font-size: 20px;
+}
+
+#carrito {
+  width: 30%;
+  background-color: rgba(115, 64, 2, 0.7176470588);
+  height: 60vh;
+  text-align: center;
+  margin-top: -300px;
+}
+
+h2 {
+  color: black;
 }/*# sourceMappingURL=estilos.css.map */
