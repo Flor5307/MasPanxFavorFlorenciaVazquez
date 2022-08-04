@@ -182,11 +182,12 @@ td {
 }
 
 #carrito {
-  width: 30%;
+  width: 25%;
   background-color: rgba(115, 64, 2, 0.7176470588);
   height: 60vh;
   text-align: center;
   margin-top: -300px;
+  margin-right: 60px;
 }
 
 h2 {

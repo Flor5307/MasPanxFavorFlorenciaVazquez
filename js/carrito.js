@@ -2,8 +2,9 @@ let btn_compra = document.querySelectorAll(".botonCompra");
 console.log(btn_compra);
 
 for (let boton of btn_compra) {
-  boton.addEventListener("click", agregar_a_carrito);
+    boton.addEventListener("click", agregar_a_carrito);
 }
+
 
 let carrito = [];
 
@@ -50,4 +51,11 @@ function mostrar_carrito(producto) {
 function borrar_producto(e) {
   let abuelo = e.target.parentNode.parentNode;
   abuelo.remove();
+  swal.fire({
+    title: "Se borró el producto del carrito!",
+    icon: "error",
+    button: "Entendido",
+  });
 }
+
+
