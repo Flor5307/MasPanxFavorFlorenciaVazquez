@@ -1,0 +1,17 @@
+[
+    {
+        "nombre": "flor",
+        "appelido": "vaz",
+        "alert" : "como estas flor"
+    },
+    {
+        "nombre": "caro",
+        "appelido": "vaz",
+        "alert" : "como estas caro con la maquina"
+    },
+    {
+        "nombre": "nacho",
+        "appelido": "vaz",
+        "alert" : "hola tatoo"
+    }
+] 
