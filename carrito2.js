@@ -334,8 +334,7 @@ function renderizarCarrito() {
     // Obtenemos el item que necesitamos de la variable base de datos
     const miItem = baseDeDatos.filter((itemBaseDatos) => {
       // ¿Coincide las id? Solo puede existir un caso
-      return;
-      itemBaseDatos.id === parseInt(item);
+      return itemBaseDatos.id === parseInt(item);
     });
     // Cuenta el número de veces que se repite el producto
     const numeroUnidadesItem = carrito.reduce((total, itemId) => {

@@ -1,5 +1,5 @@
 //USUARIO DE TARJETA
-
+/*
 let tarjeta_usuario = []
 
 function save_data(){
@@ -325,4 +325,4 @@ let como_de_todo = [
         categoria: "Panes",
         precio: "850",
     },
-]; 
+]; */
