@@ -3,9 +3,9 @@ let baseDeDatos = [
   {
     id: 1,
     nombre: "Ñoquis rellenos",
+    categoria: "pasta",
     precio: "580",
     imagen: "pan.jpg",
-    categoria: "Pastas",
     vegetariano: true,
     vegano: false,
     sinTacc: false,
@@ -13,7 +13,7 @@ let baseDeDatos = [
   {
     id: 2,
     nombre: "Ñoquis",
-    categoria: "Pastas",
+    categoria: "pasta",
     precio: "450",
     imagen: "pan.jpg",
     vegetariano: true,
@@ -23,7 +23,7 @@ let baseDeDatos = [
   {
     id: 3,
     nombre: "Fideos",
-    category: "Pastas",
+    categoria: "pasta",
     precio: "350",
     imagen: "pan.jpg",
     vegetariano: true,
@@ -33,7 +33,7 @@ let baseDeDatos = [
   {
     id: 4,
     nombre: "Capellettis",
-    categoria: "Pastas",
+    categoria: "pasta",
     precio: "500",
     imagen: "pan.jpg",
     vegetariano: true,
@@ -43,7 +43,7 @@ let baseDeDatos = [
   {
     id: 5,
     nombre: "Capellettis especiales",
-    categoria: "Pastas",
+    categoria: "pasta",
     precio: "550",
     imagen: "pan.jpg",
     vegetariano: true,
@@ -53,7 +53,7 @@ let baseDeDatos = [
   {
     id: 6,
     nombre: "Bolognesa",
-    categoria: "salsas",
+    categoria: "salsa",
     precio: "550",
     imagen: "pan.jpg",
     vegetariano: true,
@@ -63,7 +63,7 @@ let baseDeDatos = [
   {
     id: 7,
     nombre: "Crema de champi",
-    categoria: "salsas",
+    categoria: "salsa",
     precio: "450",
     imagen: "pan.jpg",
     vegetariano: true,
@@ -73,7 +73,7 @@ let baseDeDatos = [
   {
     id: 8,
     nombre: "Crema de limon",
-    categoria: "salsas",
+    categoria: "salsa",
     precio: "340",
     imagen: "pan.jpg",
     vegetariano: true,
@@ -83,7 +83,7 @@ let baseDeDatos = [
   {
     id: 9,
     nombre: "Napolitana",
-    categoria: "salsas",
+    categoria: "salsa",
     precio: "300",
     imagen: "pan.jpg",
     vegetariano: true,
@@ -93,7 +93,7 @@ let baseDeDatos = [
   {
     id: 10,
     nombre: "Tomate,aceituna y ajo",
-    categoria: "salsas",
+    categoria: "salsa",
     precio: "450",
     imagen: "pan.jpg",
     vegetariano: true,
@@ -103,7 +103,7 @@ let baseDeDatos = [
   {
     id: 11,
     nombre: "De centeno",
-    categoria: "Panes",
+    categoria: "pan",
     precio: "700",
     imagen: "pan.jpg",
     vegetariano: true,
@@ -113,7 +113,7 @@ let baseDeDatos = [
   {
     id: 12,
     nombre: "Blanco",
-    categoria: "Panes",
+    categoria: "pan",
     precio: "400",
     imagen: "pan.jpg",
     vegetariano: true,
@@ -123,7 +123,7 @@ let baseDeDatos = [
   {
     id: 13,
     nombre: "Relleno",
-    categoria: "Panes",
+    categoria: "pan",
     precio: "650",
     imagen: "pan.jpg",
     vegetariano: true,
@@ -133,7 +133,7 @@ let baseDeDatos = [
   {
     id: 14,
     nombre: "Multicereal",
-    categoria: "Panes",
+    categoria: "pan",
     precio: "550",
     imagen: "pan.jpg",
     vegetariano: true,
@@ -143,7 +143,7 @@ let baseDeDatos = [
   {
     id: 15,
     nombre: "Blanco con nueces",
-    categoria: "Panes",
+    categoria: "pan",
     precio: "850",
     imagen: "pan.jpg",
     vegetariano: true,
@@ -152,55 +152,156 @@ let baseDeDatos = [
   },
 ];
 
+// tipo de comensal
+
+let tipoDeComensal = "todo";
+
+let comensal_1 = document.getElementById("comensal_1");
+
+comensal_1.addEventListener("click", function () {
+  tipoDeComensal = "todo";
+  borrasProductos();
+  renderizarProductos();
+});
+
+let comensal_2 = document.getElementById("comensal_2");
+
+comensal_2.addEventListener("click", function () {
+  tipoDeComensal = "vegano";
+  borrasProductos();
+  renderizarProductos();
+});
+
+let comensal_3 = document.getElementById("comensal_3");
+
+comensal_3.addEventListener("click", function () {
+  tipoDeComensal = "vegetariano";
+  borrasProductos();
+  renderizarProductos();
+});
+
+let comensal_4 = document.getElementById("comensal_4");
+
+comensal_4.addEventListener("click", function () {
+  tipoDeComensal = "celiaco";
+  borrasProductos();
+  renderizarProductos();
+});
+
+// cartas de comida y carrito
 let carrito = [];
 const divisa = "€";
-const DOMitems = document.querySelector("#items");
+
+const DOMitems_pasta = document.querySelector("#items_pasta");
+const DOMitems_pan = document.querySelector("#items_pan");
+const DOMitems_salsa = document.querySelector("#items_salsa");
+
 const DOMcarrito = document.querySelector("#carrito");
 const DOMtotal = document.querySelector("#total");
 const DOMbotonVaciar = document.querySelector("#boton-vaciar");
 
 // Funciones
 
+function borrasProductos() {
+  while (DOMitems_pasta.firstChild) {
+    DOMitems_pasta.removeChild(DOMitems_pasta.lastChild);
+  }
+
+  while (DOMitems_pan.firstChild) {
+    DOMitems_pan.removeChild(DOMitems_pan.lastChild);
+  }
+
+  while (DOMitems_salsa.firstChild) {
+    DOMitems_salsa.removeChild(DOMitems_salsa.lastChild);
+  }
+}
+
 /**
  * Dibuja todos los productos a partir de la base de datos. No confundir con el carrito
  */
 function renderizarProductos() {
-  console.log(
-    filterBy(baseDeDatos, { vegetariano: true, categoria: "Pastas" })
-  );
-  baseDeDatos.forEach((info) => {
-    // Estructura
-    const miNodo = document.createElement("div");
-    miNodo.classList.add("card", "col-sm-4");
-    // Body
-    const miNodoCardBody = document.createElement("div");
-    miNodoCardBody.classList.add("card-body");
-    // Titulo
-    const miNodoTitle = document.createElement("h5");
-    miNodoTitle.classList.add("card-title");
-    miNodoTitle.textContent = info.nombre;
-    // Imagen
-    const miNodoImagen = document.createElement("img");
-    miNodoImagen.classList.add("img-fluid");
-    miNodoImagen.setAttribute("src", info.imagen);
-    // Precio
-    const miNodoPrecio = document.createElement("p");
-    miNodoPrecio.classList.add("card-text");
-    miNodoPrecio.textContent = `${info.precio}${divisa}`;
-    // Boton
-    const miNodoBoton = document.createElement("button");
-    miNodoBoton.classList.add("btn", "btn-primary");
-    miNodoBoton.textContent = "+";
-    miNodoBoton.setAttribute("marcador", info.id);
-    miNodoBoton.addEventListener("click", anyadirProductoAlCarrito);
-    // Insertamos
-    miNodoCardBody.appendChild(miNodoImagen);
-    miNodoCardBody.appendChild(miNodoTitle);
-    miNodoCardBody.appendChild(miNodoPrecio);
-    miNodoCardBody.appendChild(miNodoBoton);
-    miNodo.appendChild(miNodoCardBody);
-    DOMitems.appendChild(miNodo);
+  let pastaDatos, panDatos, salsaDatos;
+
+  switch (tipoDeComensal) {
+    case "vegano":
+      pastaDatos = filterBy(baseDeDatos, { categoria: "pasta", vegano: true });
+      panDatos = filterBy(baseDeDatos, { categoria: "pan", vegano: true });
+      salsaDatos = filterBy(baseDeDatos, { categoria: "salsa", vegano: true });
+      break;
+    case "vegetariano":
+      pastaDatos = filterBy(baseDeDatos, {
+        categoria: "pasta",
+        vegetariano: true,
+      });
+      panDatos = filterBy(baseDeDatos, { categoria: "pan", vegetariano: true });
+      salsaDatos = filterBy(baseDeDatos, {
+        categoria: "salsa",
+        vegetariano: true,
+      });
+      break;
+    case "celiaco":
+      pastaDatos = filterBy(baseDeDatos, { categoria: "pasta", sinTacc: true });
+      panDatos = filterBy(baseDeDatos, { categoria: "pan", sinTacc: true });
+      salsaDatos = filterBy(baseDeDatos, { categoria: "salsa", sinTacc: true });
+      break;
+    default:
+      pastaDatos = filterBy(baseDeDatos, { categoria: "pasta" });
+      panDatos = filterBy(baseDeDatos, { categoria: "pan" });
+      salsaDatos = filterBy(baseDeDatos, { categoria: "salsa" });
+      break;
+  }
+
+  pastaDatos.forEach((info) => {
+    const miNodo = renderizarEstructura(info);
+    DOMitems_pasta.appendChild(miNodo);
   });
+
+  DOMitems_pan.remo;
+
+  panDatos.forEach((info) => {
+    const miNodo = renderizarEstructura(info);
+    DOMitems_pan.appendChild(miNodo);
+  });
+
+  salsaDatos.forEach((info) => {
+    const miNodo = renderizarEstructura(info);
+    DOMitems_salsa.appendChild(miNodo);
+  });
+}
+
+function renderizarEstructura(info) {
+  // Estructura
+  const miNodo = document.createElement("div");
+  miNodo.classList.add("card", "col-sm-4");
+  // Body
+  const miNodoCardBody = document.createElement("div");
+  miNodoCardBody.classList.add("card-body");
+  // Titulo
+  const miNodoTitle = document.createElement("h5");
+  miNodoTitle.classList.add("card-title");
+  miNodoTitle.textContent = info.nombre;
+  // Imagen
+  const miNodoImagen = document.createElement("img");
+  miNodoImagen.classList.add("img-fluid");
+  miNodoImagen.setAttribute("src", info.imagen);
+  // Precio
+  const miNodoPrecio = document.createElement("p");
+  miNodoPrecio.classList.add("card-text");
+  miNodoPrecio.textContent = `${info.precio}${divisa}`;
+  // Boton
+  const miNodoBoton = document.createElement("button");
+  miNodoBoton.classList.add("btn", "btn-primary");
+  miNodoBoton.textContent = "+";
+  miNodoBoton.setAttribute("marcador", info.id);
+  miNodoBoton.addEventListener("click", anyadirProductoAlCarrito);
+  // Insertamos
+  miNodoCardBody.appendChild(miNodoImagen);
+  miNodoCardBody.appendChild(miNodoTitle);
+  miNodoCardBody.appendChild(miNodoPrecio);
+  miNodoCardBody.appendChild(miNodoBoton);
+  miNodo.appendChild(miNodoCardBody);
+
+  return miNodo;
 }
 
 //NUEVA FUNCION
@@ -233,7 +334,8 @@ function renderizarCarrito() {
     // Obtenemos el item que necesitamos de la variable base de datos
     const miItem = baseDeDatos.filter((itemBaseDatos) => {
       // ¿Coincide las id? Solo puede existir un caso
-      return itemBaseDatos.id === parseInt(item);
+      return;
+      itemBaseDatos.id === parseInt(item);
     });
     // Cuenta el número de veces que se repite el producto
     const numeroUnidadesItem = carrito.reduce((total, itemId) => {
@@ -282,7 +384,8 @@ function calcularTotal() {
     .reduce((total, item) => {
       // De cada elemento obtenemos su precio
       const miItem = baseDeDatos.filter((itemBaseDatos) => {
-        return itemBaseDatos.id === parseInt(item);
+        return;
+        itemBaseDatos.id === parseInt(item);
       });
       // Los sumamos al total
       return total + miItem[0].precio;
@@ -306,3 +409,25 @@ DOMbotonVaciar.addEventListener("click", vaciarCarrito);
 // Inicio
 renderizarProductos();
 renderizarCarrito();
+
+//USUARIO DE TARJETA
+
+let tarjeta_usuario = [];
+
+function save_data() {
+  let nombre_usuario = document.getElementById("nombre");
+  let codigo_usuario = document.getElementById("cvv");
+  let tarjeta_usuario = document.getElementById("numerotarjeta");
+  let usuario = {
+    nombre: nombre_usuario.value,
+    numeroTarjeta: tarjeta_usuario.value,
+    cvv: codigo_usuario.value,
+  };
+
+  let usuario_JSON = JSON.stringify(usuario);
+  console.log(usuario_JSON);
+  tarjeta_usuario.push(usuario_JSON);
+  sessionStorage.setItem("usuarios", tarjeta_usuario);
+  let buton = document.getElementById("confirm-datos");
+  buton.addEventListener("click", save_data);
+}

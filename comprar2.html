@@ -12,13 +12,11 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Quicksand:wght@300;400&family=Shadows+Into+Light&display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Quicksand:wght" rel="stylesheet" />
     <link rel="stylesheet" href="styles/estilos.css" />
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <header>
         <div>
             <h1>Flor Vazquez</h1>
@@ -60,10 +58,51 @@
         </nav>
         <!--termina navbar-->
     </header>
+    <div class="container mt-4">
+        <h3 class="font-weight-bold text-center">¿Que tipo de comensal sos?</h3>
+        <div class="btn-group d-flex justify-content-center" role="group" aria-label="Basic radio toggle button group">
+            <div class="p-2">
+                <img class="pl-4" src="img/icons/pasta2.png" for="comensal_1" alt="spaguetti-con-albondigas" />
+                <div class="row-cols-2">
+                    <input type="radio" class="form-check-input" name="btnradio" id="comensal_1" autocomplete="off"
+                        checked>
+                    <label class="text-nowrap" for="comensal_1">Como de todo</label>
+                </div>
+            </div>
+            <div class="p-2">
+                <img class="pl-2" src="img/icons/pasta1.png" for="comensal_2" alt="pasta-con-verduras" />
+                <div class="row-cols-2">
+                    <input type="radio" class="form-check-input" name="btnradio" id="comensal_2" autocomplete="off">
+                    <label for="comensal_2">Vegano</label>
+                </div>
+            </div>
+            <div class="p-2">
+                <img class="pl-4" src="img/icons/pasta3.png" for="comensal_3" alt="spaguetti-en-el-tenedor" />
+                <div class="row-cols-2">
+                    <input type="radio" class="form-check-input" name="btnradio" id="comensal_3" autocomplete="off">
+                    <label for="comensal_3">Vegetariano</label>
+                </div>
+            </div>
+            <div class="p-2">
+                <img class="pl-2" src="img/icons/gluten1.png" for="comensal_4" alt="sin-tacc" />
+                <div class="row-cols-2">
+                    <input type="radio" class="form-check-input" name="btnradio" id="comensal_4" autocomplete="off">
+                    <label for="comensal_4">Celiaco</label>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <div class="row">
             <!-- Elementos generados a partir del JSON -->
-            <main id="items" class="col-sm-8 row"></main>
+            <main class="col-sm-8 row">
+                <p> PASTAS</p>
+                <div id="items_pasta" class=" col-sm-8 row"></div>
+                <p> PANES</p>
+                <div id="items_pan" class="col-sm-8 row"></div>
+                <p> SALSAS</p>
+                <div id="items_salsa" class="col-sm-8 row"></div>
+            </main>
             <!-- Carrito -->
             <aside class="col-sm-4">
                 <h2>Carrito</h2>
@@ -76,7 +115,94 @@
             </aside>
         </div>
     </div>
-    <footer id="footer">
+    <div class="container mt-4 mr-2 ml-2 col-lg-12 col-md-12">
+        <h3 class="font-weight-bold text-center">¿Como queres pagar?</h3>
+        <form>
+            <div class="btn-group d-flex justify-content-center" role="group"
+                aria-label="Basic radio toggle button group">
+                <div class="p-2">
+                    <img class="pl-2" src="img/icons/mastercard.png" style="width: 80px;" for="pago_1"
+                        alt="pasta-con-verduras" />
+                    <div class="row-cols-2">
+                        <input type="radio" class="form-check-input" name="btnradio" id="pago_1" autocomplete="off"
+                            checked>
+                        <label for="pago_1">Debito</label>
+                    </div>
+                </div>
+                <div class="p-2">
+                    <img class="pl-3" src="img/icons/mercadopago.png" style="width: 80px;" for="pago_2"
+                        alt="mercadodepago" />
+                    <div class="row-cols-2">
+                        <input type="radio" class="form-check-input" name="btnradio" id="pago_2" autocomplete="off">
+                        <label class="text-nowrap" for="pago_2">Mercado Pago</label>
+                    </div>
+                </div>
+                <div class="p-2">
+                    <img class="pl-5" src="img/icons/efectivo.png" style="width: 80px;" for="pago_3"
+                        alt="pagar-con-efectivo" />
+                    <div class="row-cols-2">
+                        <input type="radio" class="form-check-input" name="btnradio" id="pago_3" autocomplete="off">
+                        <label class="text-nowrap" for="pago_3">Efectivo</label>
+                    </div>
+                </div>
+                <div class="p-2">
+                    <img class="pl-0" src="img/icons/visa.png" style="width: 80px;" for="pago_4"
+                        alt="pasta-con-verduras" />
+                    <div class="row-cols-2">
+                        <input type="radio" class="form-check-input" name="btnradio" id="pago_4" autocomplete="off">
+                        <label class="text-nowrap" for="pago_4">Credito</label>
+                    </div>
+                </div>
+            </div>
+            <div class="creditCardForm">
+                <div class="payment">
+                    <form>
+                        <div class="form-group owner">
+                            <label for="owner">Nombres y apellidos(como figura en la tarjeta)</label>
+                            <input type="text" class="form-control" id="nombre">
+                        </div>
+                        <div class="form-group CVV">
+                            <label for="cvv">Codigo de seguridad</label>
+                            <input type="text" class="form-control" id="cvv">
+                        </div>
+                        <div class="form-group" id="card-number-field">
+                            <label for="cardNumber">Numero de tarjeta</label>
+                            <input type="text" class="form-control" id="numerotarjeta">
+                        </div>
+                        <div class="form-group" id="expiration-date">
+                            <label>Fecha de expiracion</label>
+                            <select id="mes">
+                                <option value="01">Enero</option>
+                                <option value="02">Febrero</option>
+                                <option value="03">Marzo</option>
+                                <option value="04">Abril</option>
+                                <option value="05">Mayo</option>
+                                <option value="06">Junio</option>
+                                <option value="07">Julio</option>
+                                <option value="08">Agosto</option>
+                                <option value="09">Septiembre</option>
+                                <option value="10">Octubre</option>
+                                <option value="11">Noviembre</option>
+                                <option value="12">Diciembre</option>
+                            </select>
+                            <select id="año">
+                                <option value="16"> 2016</option>
+                                <option value="17"> 2017</option>
+                                <option value="18"> 2018</option>
+                                <option value="19"> 2019</option>
+                                <option value="20"> 2020</option>
+                                <option value="21"> 2021</option>
+                            </select>
+                        </div>
+                        <div class="form-group text-center mt-4" id="pay-now">
+                            <button type="submit" class="btn btn-outline-dark" id="confirm-datos">Hacer la
+                                compra</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </div>
+    <footer id="footer" class="mt-auto">
         <div class="footer-content">
             <div>
                 <h4>Mas pan x favor</h4>
@@ -128,7 +254,7 @@
     </footer>
     <script src="comprar2.js"></script>
     <script src="carrito2.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
