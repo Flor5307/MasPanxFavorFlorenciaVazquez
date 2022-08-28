@@ -1,17 +1,17 @@
 [
     {
         "nombre": "flor",
-        "appelido": "vaz",
-        "alert" : "como estas flor"
+        "appelido": "vazquez",
+        "alert" : "Hola Flor, vos tenes descuentos"
     },
     {
         "nombre": "caro",
-        "appelido": "vaz",
-        "alert" : "como estas caro con la maquina"
+        "appelido": "vazquez",
+        "alert" : "Aprovecha tus descuentos Caro"
     },
     {
         "nombre": "nacho",
-        "appelido": "vaz",
-        "alert" : "hola tatoo"
+        "appelido": "vazquez",
+        "alert" : "Utiliza los descuentos Nacho"
     }
 ] 

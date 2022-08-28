@@ -37,7 +37,13 @@ function test() {
       } else if (nombre_usuario.value == data[2]["nombre"]) {
         alert(data[2].alert);
       } else {
-        alert("hola nuevo");
+        Swal.fire({
+          position: "center",
+          icon: "success",
+          title: "Hola nuevo",
+          showConfirmButton: true,
+          confirmButtonText: 'Hola',
+        })
       }
     })
     .then((data) => console.log(data));

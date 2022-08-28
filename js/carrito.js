@@ -37,7 +37,7 @@ let baseDeDatos = [
     precio: "500",
     imagen: "img/comunes.webp",
     vegetariano: true,
-    vegano: true,
+    vegano: false,
     sinTacc: false,
   },
   {
