@@ -96,12 +96,12 @@
     <div class="row">
       <!-- Elementos generados a partir del JSON -->
       <main class="col-sm-8 row">
-        <p> PASTAS</p>
-        <div id="items_pasta" class=" col-sm-8 row"></div>
-        <p> PANES</p>
-        <div id="items_pan" class="col-sm-8 row"></div>
-        <p> SALSAS</p>
-        <div id="items_salsa" class="col-sm-8 row"></div>
+        <p class="bg-dark text-white mt-5" style="width: 100px;">PASTAS</p>
+        <div id="items_pasta" class=" col-sm-10 row mt-4"></div>
+        <p class="bg-dark text-white mt-5" style="width: 100px;">PANES</p>
+        <div id="items_pan" class="col-sm-10 row mt-4"></div>
+        <p class="bg-dark text-white mt-5" style="width: 100px;">SALSAS</p>
+        <div id="items_salsa" class="col-sm-10 row mt-4"></div>
       </main>
       <!-- Carrito -->
       <aside class="col-sm-4">
@@ -110,8 +110,8 @@
         <ul id="carrito" class="list-group"></ul>
         <hr>
         <!-- Precio total -->
-        <p class="text-right">Total: <span id="total"></span>&euro;</p>
-        <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+        <p class="text-right">Total: <span id="total"></span>&dollar;;</p>
+        <button id="boton-vaciar" class="btn btn-dark">Vaciar</button>
       </aside>
     </div>
   </div>
@@ -254,6 +254,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
     integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
     crossorigin="anonymous"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

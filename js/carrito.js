@@ -5,7 +5,7 @@ let baseDeDatos = [
     nombre: "Ñoquis rellenos",
     categoria: "pasta",
     precio: "580",
-    imagen: "pan.jpg",
+    imagen: "img/rellenos.webp",
     vegetariano: true,
     vegano: false,
     sinTacc: false,
@@ -15,7 +15,7 @@ let baseDeDatos = [
     nombre: "Ñoquis",
     categoria: "pasta",
     precio: "450",
-    imagen: "pan.jpg",
+    imagen: "img/noquisComunes.webp",
     vegetariano: true,
     vegano: true,
     sinTacc: false,
@@ -25,7 +25,7 @@ let baseDeDatos = [
     nombre: "Fideos",
     categoria: "pasta",
     precio: "350",
-    imagen: "pan.jpg",
+    imagen: "img/fideos-min.jpg",
     vegetariano: true,
     vegano: true,
     sinTacc: false,
@@ -35,7 +35,7 @@ let baseDeDatos = [
     nombre: "Capellettis",
     categoria: "pasta",
     precio: "500",
-    imagen: "pan.jpg",
+    imagen: "img/comunes.webp",
     vegetariano: true,
     vegano: true,
     sinTacc: false,
@@ -45,8 +45,8 @@ let baseDeDatos = [
     nombre: "Capellettis especiales",
     categoria: "pasta",
     precio: "550",
-    imagen: "pan.jpg",
-    vegetariano: true,
+    imagen: "img/especiales.jpg",
+    vegetariano: false,
     vegano: false,
     sinTacc: false,
   },
@@ -55,8 +55,8 @@ let baseDeDatos = [
     nombre: "Bolognesa",
     categoria: "salsa",
     precio: "550",
-    imagen: "pan.jpg",
-    vegetariano: true,
+    imagen: "img/salsa-boloñesa.jpg",
+    vegetariano: false,
     vegano: false,
     sinTacc: true,
   },
@@ -65,7 +65,7 @@ let baseDeDatos = [
     nombre: "Crema de champi",
     categoria: "salsa",
     precio: "450",
-    imagen: "pan.jpg",
+    imagen: "img/cremaConChampi.webp",
     vegetariano: true,
     vegano: false,
     sinTacc: true,
@@ -75,7 +75,7 @@ let baseDeDatos = [
     nombre: "Crema de limon",
     categoria: "salsa",
     precio: "340",
-    imagen: "pan.jpg",
+    imagen: "img/cremaDeLimon.jpg",
     vegetariano: true,
     vegano: false,
     sinTacc: true,
@@ -85,7 +85,7 @@ let baseDeDatos = [
     nombre: "Napolitana",
     categoria: "salsa",
     precio: "300",
-    imagen: "pan.jpg",
+    imagen: "img/receta-salsa-napolitana.jpg",
     vegetariano: true,
     vegano: true,
     sinTacc: true,
@@ -95,7 +95,7 @@ let baseDeDatos = [
     nombre: "Tomate,aceituna y ajo",
     categoria: "salsa",
     precio: "450",
-    imagen: "pan.jpg",
+    imagen: "img/tomateAjoAceitunas.jpg",
     vegetariano: true,
     vegano: true,
     sinTacc: true,
@@ -105,17 +105,17 @@ let baseDeDatos = [
     nombre: "De centeno",
     categoria: "pan",
     precio: "700",
-    imagen: "pan.jpg",
+    imagen: "img/centeno.jpg",
     vegetariano: true,
     vegano: true,
     sinTacc: false,
   },
   {
     id: 12,
-    nombre: "Blanco",
+    nombre: "Comun",
     categoria: "pan",
     precio: "400",
-    imagen: "pan.jpg",
+    imagen: "img/conNuez.jpg",
     vegetariano: true,
     vegano: true,
     sinTacc: false,
@@ -125,7 +125,7 @@ let baseDeDatos = [
     nombre: "Relleno",
     categoria: "pan",
     precio: "650",
-    imagen: "pan.jpg",
+    imagen: "img/panRelleno.jpg",
     vegetariano: true,
     vegano: true,
     sinTacc: false,
@@ -135,17 +135,17 @@ let baseDeDatos = [
     nombre: "Multicereal",
     categoria: "pan",
     precio: "550",
-    imagen: "pan.jpg",
+    imagen: "img/panIntegral.webp",
     vegetariano: true,
     vegano: true,
     sinTacc: false,
   },
   {
     id: 15,
-    nombre: "Blanco con nueces",
+    nombre: "Con nueces",
     categoria: "pan",
     precio: "850",
-    imagen: "pan.jpg",
+    imagen: "img/conNuez.webp",
     vegetariano: true,
     vegano: true,
     sinTacc: false,
@@ -294,7 +294,7 @@ function renderizarEstructura(info) {
   miNodoBoton.textContent = "+";
   miNodoBoton.setAttribute("marcador", info.id);
   miNodoBoton.addEventListener("click", anyadirProductoAlCarrito);
-  // Insertamos
+  // Inserta
   miNodoCardBody.appendChild(miNodoImagen);
   miNodoCardBody.appendChild(miNodoTitle);
   miNodoCardBody.appendChild(miNodoPrecio);
@@ -315,9 +315,9 @@ function filterBy(list, criteria) {
  * Evento para añadir un producto al carrito de la compra
  */
 function anyadirProductoAlCarrito(evento) {
-  // Anyadimos el Nodo a nuestro carrito
+  // Anyade el Nodo a nuestro carrito
   carrito.push(evento.target.getAttribute("marcador"));
-  // Actualizamos el carrito
+  // Actualiza el carrito
   renderizarCarrito();
 }
 
@@ -325,13 +325,13 @@ function anyadirProductoAlCarrito(evento) {
  * Dibuja todos los productos guardados en el carrito
  */
 function renderizarCarrito() {
-  // Vaciamos todo el html
+  // Vaciar todo el html
   DOMcarrito.textContent = "";
-  // Quitamos los duplicados
+  // Quitar los duplicados
   let carritoSinDuplicados = [...new Set(carrito)];
-  // Generamos los Nodos a partir de carrito
+  // Generar los Nodos a partir de carrito
   carritoSinDuplicados.forEach((item) => {
-    // Obtenemos el item que necesitamos de la variable base de datos
+    // Obten el item que necesitamos de la variable base de datos
     let miItem = baseDeDatos.filter((itemBaseDatos) => {
       // ¿Coincide las id? Solo puede existir un caso
       return itemBaseDatos.id === parseInt(item);
@@ -341,7 +341,7 @@ function renderizarCarrito() {
       // ¿Coincide las id? Incremento el contador, en caso contrario no mantengo
       return itemId === item ? (total += 1) : total;
     }, 0);
-    // Creamos el nodo del item del carrito
+    // Crear el nodo del item del carrito
     let miNodo = document.createElement("li");
     miNodo.classList.add("list-group-item", "text-right", "mx-2");
     miNodo.textContent = `${numeroUnidadesItem} x ${miItem[0].nombre} - ${miItem[0].precio}${divisa}`;
@@ -352,11 +352,11 @@ function renderizarCarrito() {
     miBoton.style.marginLeft = "1rem";
     miBoton.dataset.item = item;
     miBoton.addEventListener("click", borrarItemCarrito);
-    // Mezclamos nodos
+    // Mezcla nodos
     miNodo.appendChild(miBoton);
     DOMcarrito.appendChild(miNodo);
   });
-  // Renderizamos el precio total en el HTML
+  // Renderiza el precio total en el HTML
   DOMtotal.textContent = calcularTotal();
 }
 
@@ -364,13 +364,20 @@ function renderizarCarrito() {
  * Evento para borrar un elemento del carrito
  */
 function borrarItemCarrito(evento) {
-  // Obtenemos el producto ID que hay en el boton pulsado
+  // Obtener el producto ID que hay en el boton pulsado
   let id = evento.target.dataset.item;
-  // Borramos todos los productos
+  // Borrar todos los productos
   carrito = carrito.filter((carritoId) => {
     return carritoId !== id;
   });
-  // volvemos a renderizar
+  Swal.fire({
+    position: 'top-end',
+    icon: 'success',
+    title: 'Borraste el producto del carrito',
+    showConfirmButton: false,
+    timer: 1000
+  })
+  // vuelve a renderizar
   renderizarCarrito();
 }
 
@@ -378,26 +385,24 @@ function borrarItemCarrito(evento) {
  * Calcula el precio total teniendo en cuenta los productos repetidos
  */
 function calcularTotal() {
-  // Recorremos el array del carrito
-  return carrito
-    .reduce((total, item) => {
-      // De cada elemento obtenemos su precio
-      let miItem = baseDeDatos.filter((itemBaseDatos) => {
-        return itemBaseDatos.id === parseInt(item);
-      });
-      // Los sumamos al total
-      return total + miItem[0].precio;
-    }, 0)
-    .toFixed(2);
+  // se recorre el array del carrito
+  return carrito.reduce((total, item) => {
+    // De cada elemento obtenemos su precio
+    let miItem = baseDeDatos.filter((itemBaseDatos) => {
+      return itemBaseDatos.id === parseInt(item);
+    });
+    // Los suma al total
+    return total + Number(miItem[0].precio);
+  }, 0);
 }
 
 /**
  * Varia el carrito y vuelve a dibujarlo
  */
 function vaciarCarrito() {
-  // Limpiamos los productos guardados
+  // Limpia los productos guardados
   carrito = [];
-  // Renderizamos los cambios
+  // Renderiza los cambios
   renderizarCarrito();
 }
 
@@ -426,6 +431,7 @@ function save_data() {
   console.log(usuario_JSON);
   tarjeta_usuario.push(usuario_JSON);
   sessionStorage.setItem("usuarios", tarjeta_usuario);
-  let buton = document.getElementById("confirm-datos");
-  buton.addEventListener("click", save_data);
 }
+
+let buton = document.getElementById("confirm-datos");
+buton.addEventListener("click", save_data);
