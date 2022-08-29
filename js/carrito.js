@@ -283,6 +283,7 @@ function renderizarEstructura(info) {
   // Imagen
   let miNodoImagen = document.createElement("img");
   miNodoImagen.classList.add("img-fluid");
+  miNodoImagen.setAttribute("style", "height:150px");
   miNodoImagen.setAttribute("src", info.imagen);
   // Precio
   let miNodoPrecio = document.createElement("p");
