@@ -293,7 +293,7 @@ function renderizarEstructura(info) {
   miNodoBoton.classList.add("btn", "btn-primary");
   miNodoBoton.textContent = "+";
   miNodoBoton.setAttribute("marcador", info.id);
-  miNodoBoton.addEventListener("click", anyadirProductoAlCarrito);
+  miNodoBoton.addEventListener("click", añadirProductoAlCarrito);
   // Inserta
   miNodoCardBody.appendChild(miNodoImagen);
   miNodoCardBody.appendChild(miNodoTitle);
@@ -314,7 +314,7 @@ function filterBy(list, criteria) {
 /**
  * Evento para añadir un producto al carrito de la compra
  */
-function anyadirProductoAlCarrito(evento) {
+function añadirProductoAlCarrito(evento) {
   // Anyade el Nodo a nuestro carrito
   carrito.push(evento.target.getAttribute("marcador"));
   // Actualiza el carrito
@@ -366,17 +366,18 @@ function renderizarCarrito() {
 function borrarItemCarrito(evento) {
   // Obtener el producto ID que hay en el boton pulsado
   let id = evento.target.dataset.item;
+
   // Borrar todos los productos
   carrito = carrito.filter((carritoId) => {
     return carritoId !== id;
   });
   Swal.fire({
-    position: 'top-end',
-    icon: 'success',
-    title: 'Borraste el producto del carrito',
+    position: "top-end",
+    icon: "success",
+    title: "Borraste el producto del carrito",
     showConfirmButton: false,
-    timer: 1000
-  })
+    timer: 1000,
+  });
   // vuelve a renderizar
   renderizarCarrito();
 }
@@ -420,12 +421,14 @@ let tarjeta_usuario = [];
 function save_data() {
   let nombre_usuario = document.getElementById("nombre");
   let codigo_usuario = document.getElementById("cvv");
-  let tarjeta_usuario = document.getElementById("numerotarjeta");
+  let numero_usuario = document.getElementById("numerotarjeta");
   let usuario = {
     nombre: nombre_usuario.value,
-    numeroTarjeta: tarjeta_usuario.value,
+    numeroTarjeta: numero_usuario.value,
     cvv: codigo_usuario.value,
+    compras: carrito,
   };
+
 
   let usuario_JSON = JSON.stringify(usuario);
   console.log(usuario_JSON);
@@ -433,5 +436,5 @@ function save_data() {
   sessionStorage.setItem("usuarios", tarjeta_usuario);
 }
 
-let buton = document.getElementById("confirm-datos");
-buton.addEventListener("click", save_data);
+let botton = document.getElementById("confirm-datos");
+botton.addEventListener("click", save_data);
